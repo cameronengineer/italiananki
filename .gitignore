@@ -1,0 +1,47 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+pip-wheel-metadata/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Generated artifacts — do not commit
+spreadsheets/*.csv
+output/*.apkg
+media/audio/*
+media/images/*
+
+# Keep the directories themselves
+!spreadsheets/.gitkeep
+!output/.gitkeep
+!media/audio/.gitkeep
+!media/images/.gitkeep
+
+# API keys — never commit secrets
+.openai
+.openrouter
+.elevenlabs
+.env
+*.key
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
