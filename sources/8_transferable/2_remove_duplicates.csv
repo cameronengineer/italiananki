@@ -1,0 +1,1195 @@
+Word,Infinitive,English_Translation,Word_Type,Jaro_Score
+e,e,and,conj,0.0
+non,non,not,adv,0.7777777777777777
+che,che,that,"conj, pron",0.5277777777777778
+di,di,of,prep,0.0
+la,il,the,"art, f, sg",0.0
+un,uno,a,"art, num",0.0
+a,a,to,prep,0.0
+per,per,for,prep,0.5555555555555555
+è,essere,to be,verb,0.0
+in,in,in,prep,1.0
+mi,mi,me,"pron, obj, dir obj, indir obj",0.6666666666666666
+ho,avere,to have,verb,0.5476190476190476
+si,si,oneself,pron,0.0
+ma,ma,but,conj,0.0
+cosa,cosa,thing,nf,0.0
+con,con,with,prep,0.0
+no,no,no,adv,1.0
+ti,ti,you,"pron, dir obj, indir obj",0.0
+se,se,if,conj,0.0
+da,da,from,prep,0.0
+come,come,how,"adv, conj",0.5277777777777778
+io,io,I,pron,0.0
+ci,ci,there,"pron, adv",0.0
+questo,questo,this,"adj, pron",0.47222222222222215
+bene,bene,well,"adv, nm",0.5
+qui,qui,here,adv,0.0
+tu,tu,you,pron,0.0
+solo,solo,alone,"adj, adv",0.4666666666666666
+mio,mio,my,"adj, pron",0.611111111111111
+al,al,to the,prep,0.0
+me,me,me,"pron, obj, dir obj, indir obj",1.0
+tutto,tutto,all,"adj, pron, m, sg",0.0
+c',esserci,there is,verb,0.0
+fatto,fare,done,"adj, nm, verb",0.0
+so,sapere,to know,verb,0.5476190476190476
+quando,quando,when,"adv, conj, pron",0.47222222222222215
+sì,sì,yes,"adv, nm",0.0
+ora,ora,now,"adv, nf",0.0
+lei,lei,she,pron,0.0
+ne,ne,of it,"pron, adv",0.0
+oh,oh,oh,interj,1.0
+detto,dire,said,"verb, nm",0.0
+ok,ok,ok,"adj, adv, nm",1.0
+va,andare,goes,verb,0.0
+perche,perche,because,"conj, adv, nm",0.6428571428571429
+quello,quello,that,"adj, pron",0.0
+mai,mai,never,adv,0.0
+alla,alla,to the,"prep, art",0.0
+o,o,or,conj,0.8333333333333334
+anche,anche,also,"adv, conj",0.48333333333333334
+grazie,grazia,thanks,"interj, nf, pl",0.4444444444444444
+chi,chi,who,pron,0.5555555555555555
+sta,stare,is,verb,0.0
+molto,molto,very,"adv, adj, pron",0.0
+più,più,more,"adv, adj, nm",0.0
+voglio,volere,to want,verb,0.4365079365079365
+perché,perché,why,"adv, conj, nm",0.0
+tuo,tuo,your,"adj, pron",0.5555555555555555
+beh,beh,well,interj,0.5277777777777778
+lui,lui,he,pron,0.0
+allora,allora,then,"adv, conj",0.0
+posso,potere,to be able to,verb,0.4256410256410256
+ehi,ehi,hey,interj,0.0
+prima,primo,before,"adv, conj, prep, nf",0.0
+suo,suo,his,"adj, pron",0.0
+niente,niente,nothing,"adv, nm, pron",0.5317460317460317
+qualcosa,qualcosa,something,pron,0.0
+cosi,così,so,"adv, conj",0.5833333333333334
+davvero,davvero,really,"adv, interj",0.4365079365079365
+ancora,ancora,still,"adv, nf",0.0
+casa,casa,house,nf,0.48333333333333334
+dove,dove,where,"adv, conj, pron",0.48333333333333334
+su,su,on,prep,0.0
+vero,vero,true,"adj, nm",0.5
+noi,noi,we,pron,0.0
+due,due,two,"num, nm",0.0
+quindi,quindi,therefore,"adv, conj",0.0
+delle,del,some,"art, prep",0.48333333333333334
+sempre,sempre,always,adv,0.0
+altro,altro,other,"adj, pron, m, sg",0.6
+po,poco,little,"adv, nm, adj",0.0
+loro,loro,they,pron,0.0
+devo,dovere,must,verb,0.0
+forse,forse,maybe,adv,0.4666666666666666
+li,li,them,"pron, dir obj",0.0
+proprio,proprio,own,"adj, adv, pron",0.4920634920634921
+certo,certo,certain,"adj, adv",0.7904761904761904
+tempo,tempo,time,nm,0.6333333333333333
+poi,poi,then,adv,0.0
+vi,voi,you,"pron, dir obj, indir obj",0.0
+credo,credere,to believe,"verb, nm",0.3666666666666667
+vita,vita,life,nf,0.5
+sul,sul,on the,"prep, art",0.0
+quanto,quanto,how much,"adj, adv, pron",0.0
+fuori,fuori,outside,"adv, prep, m",0.565079365079365
+anni,anno,years,"m, pl",0.0
+cui,cui,which,pron,0.5111111111111111
+parte,parte,part,nf,0.9333333333333332
+visto,vedere,seen,"verb, nm",0.0
+qualcuno,qualcuno,someone,pron,0.3452380952380952
+lavoro,lavoro,work,nm,0.611111111111111
+ciao,ciao,hello,interj,0.48333333333333334
+dio,dio,god,nm,0.0
+volta,volta,time,nf,0.0
+dopo,dopo,after,"adv, prep, conj",0.0
+adesso,adesso,now,adv,0.0
+uomo,uomo,man,nm,0.0
+padre,padre,father,nm,0.5888888888888889
+bisogno,bisogno,need,nm,0.0
+gia,già,already,adv,0.4920634920634921
+amico,amico,friend,nm,0.45555555555555555
+ed,ed,and,conj,0.0
+posto,posto,place,nm,0.4666666666666666
+nessuno,nessuno,nobody,"pron, adj, m",0.4365079365079365
+via,via,way,"nf, adv",0.0
+signore,signore,gentleman,nm,0.5873015873015873
+meglio,meglio,better,"adj, adv, nm",0.4444444444444444
+cazzo,cazzo,dick,"nm, interj",0.0
+dai,dare,give,verb,0.5277777777777778
+sembra,sembrare,to seem,verb,0.0
+giorno,giorno,day,nm,0.0
+ogni,ogni,each,"adj, pron",0.0
+modo,modo,way,nm,0.0
+senza,senza,without,"prep, adv",0.0
+qualche,qualche,some,"adj, pron",0.0
+dispiace,dispiacere,to be sorry,verb,0.3106060606060606
+penso,pensare,to think,verb,0.44166666666666665
+ecco,ecco,here,adv,0.5
+parlare,parlare,to speak,verb,0.3452380952380952
+tra,trarre,to draw,verb,0.4920634920634921
+mamma,mamma,mother,nf,0.45555555555555555
+troppo,troppo,too much,"adj, adv, pron",0.625
+nuovo,nuovo,new,"adj, nm",0.5111111111111111
+male,male,badly,"adv, nm",0.6333333333333333
+madre,madre,mother,nf,0.5888888888888889
+tanto,tanto,much,"adv, adj, pron",0.0
+favore,favore,favor,nm,0.9444444444444445
+successo,successo,success,nm,0.9583333333333334
+giusto,giusto,right,"adj, adv, nm",0.5888888888888889
+aspetta,aspettare,to wait,verb,0.35714285714285715
+alle,alle,at the,"prep, art, pl",0.611111111111111
+momento,momento,moment,nm,0.9523809523809524
+ragazzi,ragazzo,boys,"nm, pl",0.0
+persone,persona,people,"nf, pl",0.746031746031746
+nostro,nostro,our,"adj, pron",0.6666666666666666
+tipo,tipo,type,"nm, adj",0.6666666666666666
+prego,pregare,you are welcome,"interj, verb",0.48888888888888893
+grande,grande,big,"adj, nmf",0.5
+senti,sentire,to feel,verb,0.0
+appena,appena,as soon as,"adv, conj",0.6
+soldi,soldo,money,"nm, pl",0.4666666666666666
+tre,tre,three,"num, nm",0.8666666666666667
+oggi,oggi,today,"adv, nm",0.48333333333333334
+piace,piacere,to like,verb,0.44761904761904764
+idea,idea,idea,nf,1.0
+figlio,figlio,son,nm,0.0
+accordo,accordo,agreement,nm,0.5026455026455027
+gente,gente,people,nf,0.5777777777777778
+sicuro,sicuro,sure,"adj, adv, nm",0.75
+vieni,venire,to come,verb,0.0
+guarda,guardare,to look,verb,0.0
+dentro,dentro,inside,"adv, prep",0.4444444444444444
+trovato,trovare,found,"verb, adj",0.44761904761904764
+caso,caso,case,nm,0.8333333333333334
+forza,forza,strength,"nf, interj",0.44166666666666665
+nome,nome,name,nm,0.8333333333333334
+problema,problema,problem,nm,0.9583333333333334
+mondo,mondo,world,nm,0.6
+preso,prendere,taken,"verb, adj",0.4666666666666666
+nulla,nulla,nothing,"pron, nm",0.44761904761904764
+donna,donna,woman,nf,0.6222222222222222
+basta,bastare,enough,"adj, adv, verb, interj",0.0
+insieme,insieme,together,"adv, nm",0.5119047619047619
+faccia,faccia,face,nf,0.75
+subito,subito,immediately,adv,0.5050505050505051
+famiglia,famiglia,family,nf,0.8194444444444445
+okay,okay,okay,"adv, adj, interj",1.0
+ah,ah,ah,interj,1.0
+stesso,stesso,same,"adj, pron",0.611111111111111
+ragione,ragione,reason,nf,0.746031746031746
+capito,capire,understood,"verb, adj",0.5111111111111111
+notte,notte,night,nf,0.6
+testa,testa,head,nf,0.48333333333333334
+serve,servire,it is needed,verb,0.5222222222222223
+tesoro,tesoro,treasure,nm,0.6388888888888888
+sotto,sotto,under,"prep, adv",0.0
+eh,eh,well,interj,0.5833333333333334
+dato,dato,fact,nm,0.6666666666666666
+bella,bello,beautiful,adj,0.6444444444444445
+scusa,scusare,excuse,"nf, verb, sentence",0.7000000000000001
+buona,buono,good,"adj, nf",0.48333333333333334
+porta,portare,door,"nf, verb",0.6333333333333333
+moglie,moglie,wife,"nf, n",0.47222222222222215
+storia,storia,history,nf,0.746031746031746
+succede,succedere,to happen,verb,0.41798941798941797
+morto,morto,dead,"adj, nm",0.0
+cercando,cercare,to search,verb,0.49074074074074076
+pronto,pronto,ready,"adj, interj",0.45555555555555555
+meno,meno,less,"adv, adj, nm",0.5
+avanti,avanti,forward,"adv, prep, interj",0.4365079365079365
+secondo,secondo,second,"adj, nm, prep",0.9523809523809524
+polizia,polizia,police,nf,0.746031746031746
+lì,lì,there,adv,0.0
+mentre,mentre,while,"conj, nm",0.45555555555555555
+letto,letto,bed,nm,0.5111111111111111
+fino,fino,until,"prep, adv, adj",0.48333333333333334
+fine,fine,end,"nf, nm, adj, adv",0.5277777777777778
+aiuto,aiutare,help,"nm, verb",0.0
+paura,paura,fear,nf,0.6333333333333333
+fratello,fratello,brother,nm,0.6011904761904762
+nell',in lo,in the,"prep, art",0.45555555555555555
+domani,domani,tomorrow,"adv, nm",0.5277777777777778
+abbastanza,abbastanza,enough,"adv, adj",0.0
+capo,capo,boss,nm,0.0
+amore,amore,love,nm,0.6333333333333333
+ucciso,uccidere,to kill,"verb, adj, m",0.4365079365079365
+piano,piano,slowly,"adv, nm, adj",0.45555555555555555
+macchina,macchina,car,nf,0.47222222222222215
+comunque,comunque,anyway,"adv, conj",0.4305555555555555
+nemmeno,nemmeno,not even,"adv, conj",0.6904761904761904
+mano,mano,hand,"f, nf",0.6666666666666666
+presto,presto,soon,"adv, adj, m",0.0
+stati,stato,states,"nm, pl",0.8222222222222223
+merda,merda,shit,nf,0.0
+bambino,bambino,child,nm,0.44761904761904764
+tornare,tornare,to return,verb,0.6899470899470899
+cio,ciò,that,pron,0.0
+vostro,vostro,your,"adj, pron",0.611111111111111
+neanche,neanche,neither,"adv, conj",0.7142857142857143
+sera,sera,evening,nf,0.46428571428571425
+giro,giro,turn,nm,0.5
+morte,morte,death,nf,0.4666666666666666
+qua,qua,here,adv,0.0
+diavolo,diavolo,devil,nm,0.7071428571428572
+quasi,quasi,almost,adv,0.5777777777777778
+contro,contro,against,"prep, adv",0.4365079365079365
+felice,felice,happy,adj,0.0
+colpa,colpa,fault,nf,0.4666666666666666
+punto,punto,point,nm,0.7333333333333334
+quale,quale,which,"adj, pron",0.0
+chiesto,chiedere,asked,verb,0.44761904761904764
+invece,invece,instead,"adv, conj",0.6428571428571429
+perchè,perchè,why,"adv, conj, nm",0.0
+migliore,migliore,better,"adj, nmf",0.3611111111111111
+finito,finire,finished,"adj, verb",0.7222222222222222
+papa,papa,pope,nm,0.6666666666666666
+almeno,almeno,at least,adv,0.625
+quei,quel,those,"adj, pron",0.0
+col,col,with the,"prep, art",0.0
+passato,passato,past,"adj, nm",0.8571428571428571
+magari,magari,maybe,"adv, interj",0.5777777777777778
+minuti,minuto,minutes,"m, pl",0.8492063492063492
+terra,terra,earth,nf,0.6
+strada,strada,street,nf,0.6666666666666666
+importante,importante,important,adj,0.9666666666666667
+salve,salve,hello,interj,0.4666666666666666
+settimana,settimana,week,nf,0.4537037037037037
+perso,perdere,lost,"adj, verb",0.48333333333333334
+uscire,uscire,to go out,verb,0.0
+papà,papà,dad,nm,0.5277777777777778
+stasera,stasera,this evening,adv,0.44841269841269843
+dollari,dollaro,dollars,"nm, pl",0.9047619047619048
+occhi,occhio,eyes,"nm, pl",0.0
+ultima,ultimo,last,"adj, nf",0.611111111111111
+possibile,possibile,possible,"adj, nm",0.9629629629629629
+scuola,scuola,school,nf,0.7777777777777777
+significa,significare,to mean,verb,0.335978835978836
+nelle,nel,in the,"prep, art, f, pl",0.5777777777777778
+importa,importare,to matter,verb,0.5052910052910052
+indietro,indietro,back,adv,0.0
+riesco,riuscire,to succeed,verb,0.48888888888888893
+sangue,sangue,blood,nm,0.0
+chiama,chiamare,to call,verb,0.4365079365079365
+messo,mettere,to put,"verb, m, sg",0.0
+piccolo,piccolo,small,"adj, nm",0.44761904761904764
+traduzione,traduzione,translation,nf,0.7151515151515152
+tardi,tardi,late,adv,0.48333333333333334
+cuore,cuore,heart,nm,0.4666666666666666
+marito,marito,husband,"m, nm",0.0
+ieri,ieri,yesterday,adv,0.5740740740740741
+spero,sperare,to hope,verb,0.44761904761904764
+ricordi,ricordare,memory,"nm, pl, verb",0.5396825396825397
+lasciato,lasciare,left,"verb, adj",0.5833333333333334
+ascolta,ascoltare,to listen,verb,0.5873015873015873
+difficile,difficile,difficult,adj,0.8518518518518517
+auto,auto,car,nf,0.5277777777777778
+fantastico,fantastico,fantastic,adj,0.9666666666666667
+numero,numero,number,nm,0.888888888888889
+veramente,veramente,really,adv,0.5
+serio,serio,serious,adj,0.9047619047619048
+entrare,entrare,to enter,verb,0.6464285714285715
+qualsiasi,qualsiasi,any,"adj, pron",0.48148148148148145
+acqua,acqua,water,nf,0.4666666666666666
+stanza,stanza,room,nf,0.0
+forte,forte,strong,"adj, adv, nm",0.5888888888888889
+amo,amare,to love,verb,0.4920634920634921
+roba,roba,stuff,nf,0.0
+agente,agente,agent,"nmf, nc",0.9444444444444445
+dietro,dietro,behind,"adv, prep",0.38888888888888884
+corpo,corpo,body,nm,0.48333333333333334
+pare,parere,it seems,verb,0.4583333333333333
+foto,foto,photo,nf,0.7833333333333333
+telefono,telefono,telephone,nm,0.8055555555555555
+vicino,vicino,near,"adj, adv",0.0
+sacco,sacco,sack,nm,0.7833333333333333
+cinque,cinque,five,"num, m, pl",0.611111111111111
+strano,strano,strange,adj,0.8492063492063492
+bravo,bravo,good,adj,0.0
+festa,festa,party,nf,0.4666666666666666
+senso,senso,sense,nm,0.8666666666666667
+genere,genere,kind,nm,0.47222222222222215
+quattro,quattro,four,"num, nm",0.5952380952380952
+attimo,attimo,moment,nm,0.4444444444444444
+sorella,sorella,sister,nf,0.5396825396825397
+pure,pure,also,"adv, conj",0.0
+probabilmente,probabilmente,probably,adv,0.8044871794871794
+film,film,film,nm,1.0
+ufficio,ufficio,office,nm,0.746031746031746
+verso,verso,towards,"prep, nm, verb",0.44761904761904764
+mesi,mese,months,"nm, pl",0.47222222222222215
+unica,unico,only,"adj, nf",0.48333333333333334
+morire,morire,to die,verb,0.6666666666666666
+vecchio,vecchio,old,"adj, nm",0.0
+domanda,domandare,question,"nf, verb",0.4226190476190476
+ben,ben,well,adv,0.5277777777777778
+guerra,guerra,war,nf,0.5
+dottore,dottore,doctor,nm,0.8492063492063492
+conosco,conoscere,to know,verb,0.6190476190476191
+vivere,vivere,to live,"verb, nm",0.4365079365079365
+vista,vista,view,nf,0.6333333333333333
+prova,provare,test,"nf, verb",0.0
+divertente,divertente,funny,adj,0.43333333333333335
+paio,paio,pair,nm,0.8333333333333334
+conto,conto,account,nm,0.5619047619047619
+mezzo,mezzo,half,"adj, nm",0.0
+lavorare,lavorare,to work,verb,0.5119047619047619
+esattamente,esattamente,exactly,adv,0.5670995670995671
+squadra,squadra,team,nf,0.46428571428571425
+esatto,esatto,exact,adj,0.7000000000000001
+faro,faro,lighthouse,nm,0.45
+parola,parola,word,nf,0.4444444444444444
+piedi,piede,foot,"nm, pl",0.0
+sopra,sopra,above,"adv, prep",0.4666666666666666
+motivo,motivo,reason,nm,0.4444444444444444
+cavolo,cavolo,cabbage,"nm, interj",0.5396825396825397
+capitano,capitare,captain,"nm, verb",0.9107142857142857
+finita,finito,finished,"adj, verb",0.7222222222222222
+gioco,gioco,game,nm,0.48333333333333334
+perfetto,perfetto,perfect,"adj, nm",0.8690476190476191
+be,bere,to drink,verb,0.0
+mente,mente,mind,nf,0.6333333333333333
+mangiare,mangiare,to eat,verb,0.4305555555555555
+resto,restare,rest,"nm, verb",0.9333333333333332
+fortuna,fortuna,luck,nf,0.0
+tratta,trattare,to treat,"verb, nf",0.6861111111111112
+là,là,there,adv,0.0
+entrambi,entrambo,both,"adj, pron",0.4583333333333333
+passare,passare,to pass,verb,0.35714285714285715
+cena,cena,dinner,nf,0.47222222222222215
+controllo,controllare,control,"nm, verb",0.9259259259259259
+affari,affare,business,"m, pl",0.4305555555555555
+spiace,spiacere,to be sorry,verb,0.41919191919191917
+facile,facile,easy,adj,0.47222222222222215
+buongiorno,buongiorno,good morning,"interj, nm",0.6555555555555556
+davanti,davanti,in front,"adv, prep",0.5119047619047619
+tizio,tizio,guy,nm,0.0
+sicurezza,sicurezza,safety,nf,0.5185185185185185
+dalle,dalle,from the,"prep, art",0.44166666666666665
+matrimonio,matrimonio,marriage,nm,0.6333333333333333
+john,john,toilet,nm,0.47222222222222215
+culo,culo,ass,nm,0.0
+fuoco,fuoco,fire,nm,0.48333333333333334
+pistola,pistola,gun,nf,0.0
+re,re,king,nm,0.0
+mandato,mandare,mandate,"nm, verb",0.9047619047619048
+puttana,puttana,whore,nf,0.0
+cioe,cioè,that is to say,"adv, conj",0.44047619047619047
+inizio,inizio,beginning,nm,0.611111111111111
+causa,causa,cause,nf,0.8666666666666667
+però,però,but,"conj, adv",0.0
+genitori,genitore,parents,"nm, pl",0.6011904761904762
+sesso,sesso,sex,nm,0.6888888888888888
+ricevuto,ricevere,received,"verb, adj",0.6833333333333332
+presidente,presidente,president,nmf,0.9666666666666667
+città,città,city,nf,0.7833333333333333
+ospedale,ospedale,hospital,nm,0.75
+agli,agli,to the,"prep, art, m, pl",0.0
+scritto,scrivere,written,"adj, nm, verb",0.7142857142857143
+smettila,smettere,stop it,"verb, sentence",0.6071428571428571
+attenzione,attenzione,attention,nf,0.8962962962962964
+situazione,situazione,situation,nf,0.8962962962962964
+omicidio,omicidio,murder,nm,0.5277777777777778
+revisione,revisione,revision,nf,0.9629629629629629
+ottimo,ottimo,excellent,adj,0.0
+cura,cura,care,nf,0.6666666666666666
+durante,durante,during,prep,0.746031746031746
+new,new,new,adj,1.0
+prossima,prossimo,next,"adj, nf",0.0
+arrivato,arrivare,arrived,"verb, adj",0.7797619047619048
+paese,paese,country,nm,0.0
+chiunque,chiunque,anyone,pron,0.5277777777777778
+pace,pace,peace,nf,0.9333333333333332
+immagino,immaginare,to imagine,verb,0.7833333333333333
+musica,musica,music,nf,0.9444444444444445
+tieni,tenere,to hold,verb,0.44761904761904764
+oddio,oddio,oh my god,interj,0.5407407407407407
+jack,jack,jack,nm,1.0
+libro,libro,book,nm,0.0
+diventare,diventare,to become,verb,0.48148148148148145
+sbagliato,sbagliare,wrong,"adj, nm, verb",0.43703703703703706
+wow,wow,wow,interj,1.0
+venuta,venuta,arrival,nf,0.4365079365079365
+scelta,scelta,choice,nf,0.4444444444444444
+assolutamente,assolutamente,absolutely,adv,0.7461538461538462
+scoperto,scoprire,to discover,"verb, adj, m",0.4772727272727273
+fatti,fatto,facts,"nm, pl",0.7333333333333334
+alcuni,alcuno,some,"adj, pron",0.0
+prigione,prigione,prison,nf,0.8194444444444445
+giornata,giornata,day,nf,0.0
+piuttosto,piuttosto,rather,"adv, conj",0.4259259259259259
+lungo,lungo,long,"adj, adv",0.7833333333333333
+avvocato,avvocato,lawyer,nm,0.4305555555555555
+deciso,decidere,decided,"adj, verb",0.746031746031746
+messaggio,messaggio,message,nm,0.8412698412698413
+dormire,dormire,to sleep,verb,0.5119047619047619
+dieci,dieci,ten,"num, nm",0.5111111111111111
+stupido,stupido,stupid,"adj, nm",0.9523809523809524
+usare,usare,to use,verb,0.45555555555555555
+cielo,cielo,sky,nm,0.0
+bagno,bagno,bathroom,nm,0.6583333333333333
+aria,aria,air,nf,0.8055555555555555
+voce,voce,voice,nf,0.9333333333333332
+giù,giù,down,"adv, prep",0.0
+benissimo,benissimo,very well,adv,0.40740740740740744
+verita,verità,truth,nf,0.5777777777777778
+cane,cane,dog,nm,0.0
+campo,campo,field,nm,0.0
+luce,luce,light,nf,0.48333333333333334
+qualunque,qualunque,any,"adj, pron",0.48148148148148145
+giovane,giovane,young,"adj, nmf",0.5619047619047619
+fra,fra,between,prep,0.0
+lontano,lontano,far,"adj, adv",0.0
+gruppo,gruppo,group,nm,0.8222222222222223
+continua,continuare,to continue,"verb, adj",0.7895021645021645
+arrivo,arrivo,arrival,nm,0.8492063492063492
+realta,realtà,reality,nf,0.8492063492063492
+passo,passo,step,nm,0.0
+domande,domanda,questions,"nf, pl",0.41798941798941797
+insomma,insomma,basically,"adv, interj",0.4761904761904761
+capelli,capello,hair,"nm, pl",0.46428571428571425
+onore,onore,honor,nm,0.8666666666666667
+prove,prova,tests,"nf, pl",0.0
+funziona,funzionare,to work,verb,0.4226190476190476
+alto,alto,tall,"adj, nm",0.6666666666666666
+futuro,futuro,future,"nm, adj",0.888888888888889
+preoccuparti,preoccupare,to worry,verb,0.4305555555555555
+idiota,idiota,idiot,"adj, nmf",0.9444444444444445
+cibo,cibo,food,nm,0.5
+fretta,fretta,haste,nf,0.41111111111111115
+cara,caro,dear,"adj, nf",0.6666666666666666
+finalmente,finalmente,finally,adv,0.7380952380952381
+odio,odio,hatred,nm,0.0
+solito,solito,usual,"adj, nm",0.5777777777777778
+incidente,incidente,accident,nm,0.75
+intenzione,intenzione,intention,nf,0.8962962962962964
+speciale,speciale,special,"adj, nm",0.9583333333333334
+cambiare,cambiare,to change,verb,0.5694444444444444
+camera,camera,room,nf,0.47222222222222215
+oltre,oltre,beyond,"adv, prep",0.0
+semplice,semplice,simple,adj,0.8194444444444445
+riguardo,riguardo,regard,"nm, prep",0.8194444444444445
+finche,finché,until,"conj, adv",0.41111111111111115
+viaggio,viaggio,journey,nm,0.0
+chiaro,chiaro,clear,"adj, adv, nm",0.7000000000000001
+bocca,bocca,mouth,nf,0.4666666666666666
+permesso,permesso,permission,"nm, adj",0.8583333333333334
+giocare,giocare,to play,verb,0.5238095238095238
+ordine,ordine,order,nm,0.8222222222222223
+circa,circa,about,"adv, prep",0.0
+ovviamente,ovviamente,obviously,adv,0.5444444444444444
+piu',piu',more,adv,0.0
+natale,natale,Christmas,"nm, adj",0.4259259259259259
+mattina,mattina,morning,"f, nf",0.5079365079365079
+sistema,sistema,system,nm,0.8492063492063492
+york,york,York,other,0.8333333333333334
+fondo,fondo,bottom,"nm, adj",0.5777777777777778
+milioni,milione,millions,"nm, pl",0.8690476190476191
+soltanto,soltanto,only,adv,0.5833333333333334
+armi,arma,arms,"nf, pl",0.8333333333333334
+fermo,fermo,still,"adj, m, sg",0.0
+cristo,cristo,Christ,nm,0.7777777777777777
+appuntamento,appuntamento,appointment,nm,0.8560606060606061
+detective,detective,detective,"nmf, nc",1.0
+pero,pero,pear tree,nm,0.6944444444444443
+grado,grado,degree,nm,0.5777777777777778
+nave,nave,ship,nf,0.0
+iniziato,iniziare,started,"verb, adj",0.5119047619047619
+informazioni,informazione,information,"nf, pl",0.914141414141414
+libero,libero,free,"adj, nm",0.47222222222222215
+stronzo,stronzo,asshole,"nm, adj",0.5238095238095238
+pezzo,pezzo,piece,nm,0.6
+segreto,segreto,secret,"adj, nm",0.8492063492063492
+colpo,colpo,blow,nm,0.4666666666666666
+oppure,oppure,or,conj,0.5555555555555555
+completamente,completamente,completely,adv,0.8051282051282053
+lista,lista,list,nf,0.9333333333333332
+veloce,veloce,fast,"adj, adv",0.0
+assassino,assassino,killer,"nm, adj",0.0
+tom,tomo,volume,nm,0.6666666666666666
+ormai,ormai,by now,adv,0.0
+interessa,interessare,to interest,verb,0.757094757094757
+generale,generale,general,"adj, nm",0.9583333333333334
+pazzo,pazzo,crazy,"adj, nm",0.6
+vittima,vittima,victim,nf,0.8492063492063492
+giuro,giurare,to swear,"verb, nm",0.44166666666666665
+consiglio,consiglio,advice,nm,0.4259259259259259
+michael,michael,Michael,nm,0.9047619047619048
+semplicemente,semplicemente,simply,adv,0.605982905982906
+zio,zio,uncle,nm,0.0
+centro,centro,center,nm,0.888888888888889
+specie,specie,species,nf,0.9523809523809524
+mille,mille,thousand,"adj, num",0.0
+sogno,sogno,dream,nm,0.0
+carino,carino,cute,adj,0.47222222222222215
+brutto,brutto,ugly,"adj, nm",0.47222222222222215
+nello,nello,in the,prep,0.45555555555555555
+incredibile,incredibile,incredible,adj,0.9696969696969697
+sole,sole,sun,nm,0.5277777777777778
+glielo,glielo,it to him,pron,0.5185185185185185
+legge,leggere,law,"nf, verb",0.5111111111111111
+spesso,spesso,often,"adv, adj",0.45555555555555555
+scena,scena,scene,nf,0.8666666666666667
+charlie,charlie,Charlie,nm,0.9047619047619048
+gentile,gentile,kind,adj,0.46428571428571425
+rispetto,rispetto,respect,nm,0.7130952380952381
+zitto,zitto,quiet,"adj, interj",0.6
+incontro,incontro,meeting,nm,0.3452380952380952
+rapporto,rapporto,relationship,nm,0.5277777777777778
+errore,errore,error,nm,0.9444444444444445
+mike,mike,mike,nm,1.0
+pagare,pagare,to pay,verb,0.4444444444444444
+sorpresa,sorpresa,surprise,nf,0.7777777777777778
+occhiata,occhiata,glance,nf,0.3611111111111111
+risposta,risposta,answer,nf,0.4305555555555555
+presa,presa,grip,nf,0.48333333333333334
+servizio,servizio,service,nm,0.7797619047619048
+medico,medico,doctor,"nm, adj",0.6666666666666666
+usato,usato,used,"adj, nm",0.6333333333333333
+hey,hey,hey,interj,1.0
+schifo,schifo,disgust,nm,0.373015873015873
+dolore,dolore,pain,"m, nm",0.0
+personale,personale,personal,"adj, nm",0.9629629629629629
+peggio,peggio,worse,"adv, adj, nm",0.0
+addio,addio,goodbye,"nm, interj",0.3952380952380952
+addosso,addosso,on,adv,0.0
+pieno,pieno,full,"adj, nm",0.0
+diverso,diverso,different,adj,0.671957671957672
+vestiti,vestito,clothes,"nm, pl",0.42857142857142855
+sparato,sparare,to shoot,"adj, verb",0.4900793650793651
+normale,normale,normal,"adj, nf",0.9523809523809524
+fame,fame,hunger,nf,0.47222222222222215
+programma,programma,program,nm,0.9259259259259259
+nonna,nonno,grandmother,nf,0.3606060606060606
+notizie,notizia,news,"nf, pl",0.46428571428571425
+posizione,posizione,position,nf,0.8842592592592592
+rimanere,rimanere,to stay,verb,0.4226190476190476
+compagnia,compagnia,company,nf,0.8412698412698413
+proposito,proposito,purpose,nm,0.6899470899470899
+joe,joe,coffee,nm,0.6666666666666666
+frank,frank,franc,nm,0.8666666666666667
+chiuso,chiudere,closed,"adj, nm",0.5555555555555555
+terribile,terribile,terrible,adj,0.9629629629629629
+ritardo,ritardo,delay,nm,0.44761904761904764
+attento,attento,careful,"adj, interj",0.5238095238095238
+bar,bar,bar,nm,1.0
+dimenticato,dimenticare,forgotten,"adj, verb",0.436026936026936
+bisogna,bisognare,it is necessary,verb,0.6126984126984126
+impossibile,impossibile,impossible,adj,0.9696969696969697
+studio,studiare,study,"nm, verb",0.8222222222222223
+uscita,uscita,exit,nf,0.611111111111111
+david,david,David,nm,0.8666666666666667
+vattene,andarsene,go away,"verb, sentence",0.42857142857142855
+guai,guaire,to howl,verb,0.0
+intorno,intorno,around,"adv, prep",0.5396825396825397
+video,video,video,nm,1.0
+manca,mancare,to be missing,verb,0.0
+grosso,grosso,big,"adj, m",0.5
+dolce,dolce,sweet,"adj, nm",0.4666666666666666
+chiave,chiave,key,nf,0.0
+cervello,cervello,brain,nm,0.44166666666666665
+coraggio,coraggio,courage,nm,0.7797619047619048
+interessante,interessante,interesting,adj,0.8190235690235691
+peccato,peccato,sin,"nm, interj",0.0
+questione,questione,issue,nf,0.5333333333333333
+adoro,adorare,to adore,verb,0.7416666666666667
+aereo,aereo,airplane,"nm, adj",0.5499999999999999
+rubato,rubare,stolen,"adj, verb",0.0
+sala,sala,room,nf,0.0
+base,base,base,nf,1.0
+peter,peter,to peter out,verb,0.7388888888888889
+george,George,George,nm,0.888888888888889
+sette,sette,seven,"num, nm",0.7333333333333334
+compleanno,compleanno,birthday,nm,0.4083333333333334
+relazione,relazione,relationship,nf,0.7870370370370371
+cliente,cliente,customer,nmf,0.4900793650793651
+spalle,spalla,shoulders,"nf, pl",0.611111111111111
+parti,partire,to leave,verb,0.44166666666666665
+vale,valere,to be worth,verb,0.44696969696969696
+diritto,diritto,right,"nm, adj, adv",0.565079365079365
+sicuramente,sicuramente,surely,adv,0.6767676767676768
+appartamento,appartamento,apartment,nm,0.9166666666666666
+pranzo,pranzo,lunch,nm,0.45555555555555555
+denaro,denaro,money,nm,0.41111111111111115
+serata,serata,evening,nf,0.4365079365079365
+nero,nero,black,"adj, nm",0.0
+carta,carta,paper,nf,0.4666666666666666
+ex,ex,former,"adj, nmf",0.0
+bastardo,bastardo,bastard,"adj, nm",0.9583333333333334
+otto,otto,eight,"num, nm",0.0
+zona,zona,area,nf,0.5
+intendo,intendere,to intend,verb,0.7857142857142857
+negozio,negozio,shop,nm,0.46428571428571425
+partita,partita,game,nf,0.46428571428571425
+tv,voler bene,to love you,"verb, obj",0.7272727272727272
+spazio,spazio,space,nm,0.7000000000000001
+linea,linea,line,nf,0.9333333333333332
+james,James,James,nm,0.8666666666666667
+riguarda,riguardare,to concern,verb,0.4083333333333334
+uh,uh,uh,interj,1.0
+poliziotto,poliziotto,policeman,nm,0.6148148148148148
+scappare,scappare,to escape,verb,0.4583333333333333
+fronte,fronte,forehead,"nf, nm",0.6388888888888888
+vinto,vincere,to win,"verb, adj, m, sg",0.0
+tranquillo,tranquillo,quiet,adj,0.5666666666666668
+silenzio,silenzio,silence,nm,0.7797619047619048
+simile,simile,similar,"adj, nm",0.8492063492063492
+calma,calmo,calm,"nf, adj",0.9333333333333332
+santo,santo,holy,"adj, nm",0.0
+ricerca,ricerca,research,nf,0.7130952380952381
+pena,pena,pain,nf,0.6666666666666666
+esiste,esistere,to exist,verb,0.7222222222222222
+altrimenti,altrimenti,otherwise,"adv, conj",0.5314814814814816
+luogo,luogo,place,nm,0.4666666666666666
+lettera,lettera,letter,nf,0.9523809523809524
+salvare,salvare,to save,verb,0.5079365079365079
+canzone,canzone,song,nf,0.46428571428571425
+pubblico,pubblico,public,"adj, nm",0.9166666666666666
+corso,corso,course,nm,0.8222222222222223
+henry,henry,henry,nm,1.0
+regalo,regalo,gift,nm,0.47222222222222215
+né,né,nor,conj,0.611111111111111
+scherzando,scherzare,to joke,verb,0.4142857142857143
+stamattina,stamattina,this morning,adv,0.5055555555555555
+missione,missione,mission,nf,0.9583333333333334
+test,test,test,nm,1.0
+salute,salute,health,nf,0.6666666666666666
+scelto,scegliere,chosen,"adj, verb",0.5555555555555555
+dura,durare,lasting,"adj, verb",0.46428571428571425
+computer,computer,computer,nm,1.0
+contatto,contatto,contact,nm,0.8690476190476191
+pericolo,pericolo,danger,nm,0.5277777777777778
+entro,entro,within,prep,0.45555555555555555
+freddo,freddo,cold,"adj, nm",0.47222222222222215
+triste,triste,sad,adj,0.0
+promesso,promettere,to promise,"verb, adj, m",0.6166666666666667
+esercito,esercito,army,nm,0.4583333333333333
+america,america,America,nf,0.9047619047619048
+dunque,dunque,therefore,"adv, conj",0.4259259259259259
+guardia,guardia,guard,"nf, nm/f",0.9047619047619048
+infatti,infatti,actually,"adv, conj",0.5119047619047619
+possibilita,possibilita,possibility,nf,0.9393939393939394
+fbi,fbi,FBI,nm,0.0
+casino,casino,mess,nm,0.47222222222222215
+buonanotte,buonanotte,goodnight,"nf, interj",0.5314814814814816
+caccia,caccia,hunting,nf,0.4365079365079365
+gay,gay,gay,"adj, nmf",1.0
+max,max,maximum,"adj, nm",0.8095238095238096
+certamente,certamente,certainly,adv,0.7555555555555555
+regole,regola,rules,"nf, pl",0.5888888888888889
+ballo,ballo,dance,nm,0.4666666666666666
+birra,birra,beer,nf,0.6333333333333333
+ovunque,ovunque,everywhere,"adv, conj",0.49523809523809526
+club,club,club,nm,1.0
+paul,paul,Paul,nm,0.8333333333333334
+governo,governo,government,nm,0.8190476190476191
+bellissima,bellissimo,beautiful,adj,0.5444444444444444
+oro,oro,gold,nm,0.5277777777777778
+duro,duro,hard,"adj, adv",0.5
+cucina,cucinare,kitchen,"nf, verb",0.5317460317460317
+decisione,decisione,decision,nf,0.9629629629629629
+anima,anima,soul,nf,0.0
+forma,forma,shape,nf,0.0
+esempio,esempio,example,nm,0.6190476190476191
+incontrato,incontrare,to meet,verb,0.49523809523809526
+occasione,occasione,opportunity,nf,0.5193602693602694
+stanotte,stanotte,tonight,adv,0.6071428571428571
+droga,droga,drug,nf,0.7833333333333333
+possibilità,possibilità,possibility,nf,0.9393939393939394
+cellulare,cellulare,cell phone,"nm, adj",0.6851851851851851
+necessario,necessario,necessary,"adj, nm",0.8962962962962964
+ferma,fermare,to stop,verb,0.0
+borsa,borsa,bag,nf,0.5111111111111111
+palle,palla,balls,"nf, pl",0.7333333333333334
+attacco,attacco,attack,nm,0.8492063492063492
+dagli,dagli,from the,"prep, art",0.0
+affatto,affatto,at all,adv,0.5396825396825397
+colpito,colpire,hit,"verb, adj",0.0
+siediti,sedersi,to sit down,"verb, -fam",0.5616883116883117
+reale,reale,real,"adj, nm",0.9333333333333332
+comprare,comprare,to buy,verb,0.4305555555555555
+inferno,inferno,hell,nm,0.46428571428571425
+aperto,aprire,open,"adj, verb",0.611111111111111
+braccio,braccio,arm,"m, nm",0.48412698412698413
+fermati,fermarsi,to stop,verb,0.42857142857142855
+crimine,crimine,crime,nm,0.9047619047619048
+chiesa,chiesa,church,nf,0.5555555555555555
+effetti,effetto,effects,"nm, pl",0.8095238095238096
+tenente,tenente,lieutenant,nmf,0.707936507936508
+scommetto,scommettere,to bet,verb,0.611111111111111
+paziente,paziente,patient,"adj, nmf",0.8690476190476191
+scarpe,scarpa,shoes,"nf, pl",0.5777777777777778
+danny,Danny,Danny,nm,0.8666666666666667
+livello,livello,level,nm,0.7071428571428572
+mentito,mentire,to lie,verb,0.4365079365079365
+viva,vivo,alive,adj,0.6333333333333333
+spettacolo,spettacolo,show,nm,0.45
+visita,visitare,visit,"nf, verb",0.9444444444444445
+precedenti,precedente,previous,"adj, nm, pl",0.5583333333333333
+mica,mica,at all,adv,0.47222222222222215
+sinistra,sinistro,left,"adj, nf",0.4583333333333333
+percio,perciò,therefore,"conj, adv",0.611111111111111
+processo,processo,process,nm,0.9583333333333334
+mare,mare,sea,nm,0.5277777777777778
+direttore,direttore,director,nm,0.8842592592592592
+intelligente,intelligente,intelligent,adj,0.9722222222222222
+mary,marry,to marry,verb,0.7083333333333334
+rende,rendere,to make,verb,0.44761904761904764
+classe,classe,class,nf,0.9444444444444445
+ehm,ehm,um,interj,0.0
+scorsa,scorso,last,"adj, f, sg",0.47222222222222215
+bianco,bianco,white,"adj, nm",0.45555555555555555
+tavolo,tavolo,table,"m, nm",0.7000000000000001
+stagione,stagione,season,nf,0.7222222222222222
+nick,nick,nickname,nm,0.8333333333333334
+dannazione,dannazione,damnation,"nf, interj",0.825925925925926
+cavallo,cavallo,horse,nm,0.0
+sergente,sergente,sergeant,nmf,0.9166666666666666
+incinta,incinto,pregnant,adj,0.6071428571428571
+rotto,rotto,broken,"adj, m",0.5777777777777778
+episodio,episodio,episode,nm,0.8690476190476191
+rispondere,rispondere,to answer,verb,0.6185185185185186
+contento,contento,happy,"adj, nm",0.0
+inglese,inglese,English,"adj, nmf",0.7142857142857143
+volo,volo,flight,nm,0.47222222222222215
+attraverso,attraverso,through,"prep, adv",0.49523809523809526
+differenza,differenza,difference,nf,0.8666666666666667
+coi,con il,with the,"prep, art",0.4861111111111111
+codice,codice,code,nm,0.8888888888888888
+lato,lato,side,nm,0.0
+hotel,hotel,hotel,nm,1.0
+maggiore,maggiore,greater,"adj, nm",0.5238095238095238
+farsi,farsi,to become,verb,0.0
+uniti,unire,united,"adj, verb",0.8222222222222223
+eccolo,eccolo,here he is,"adv, pron",0.4222222222222222
+carne,carne,meat,nf,0.48333333333333334
+star,star,star,nf,1.0
+umano,umano,human,"adj, nm",0.8666666666666667
+de,de,of,prep,0.0
+libera,liberare,free,"adj, verb",0.47222222222222215
+caldo,caldo,hot,"adj, nm",0.0
+pelle,pelle,skin,nf,0.0
+interno,interno,internal,"adj, nm",0.8690476190476191
+temo,temere,to fear,verb,0.5952380952380952
+comandante,comandante,commander,nmf,0.825925925925926
+pomeriggio,pomeriggio,afternoon,nm,0.5444444444444444
+documenti,documento,documents,"m, pl",0.9259259259259259
+giudice,giudice,judge,"nm, nf",0.6761904761904761
+mostro,mostro,monster,nm,0.8492063492063492
+destra,destro,right,"adj, nf",0.45555555555555555
+luna,luna,moon,nf,0.5
+ringrazio,ringraziare,to thank,verb,0.41203703703703703
+pericoloso,pericoloso,dangerous,adj,0.6148148148148148
+figliolo,figliolo,son,nm,0.0
+jake,jacer,to throw,verb,0.0
+vino,vino,wine,nm,0.6666666666666666
+presente,presente,present,"adj, nm",0.9583333333333334
+arrivederci,arrivederci,goodbye,interj,0.32251082251082247
+caffè,caffè,coffee,nm,0.7000000000000001
+barca,barca,boat,nf,0.6333333333333333
+maledizione,maledizione,curse,nf,0.43030303030303035
+lezione,lezione,lesson,nf,0.746031746031746
+intero,intero,whole,"adj, nm",0.45555555555555555
+nord,nord,north,nm,0.7833333333333333
+jimmy,jimmare,crowbar,verb,0.0
+congratulazioni,congratulazione,congratulations,"nf, pl",0.9111111111111111
+data,data,date,"nf, sg",0.8333333333333334
+sposato,sposare,married,"adj, verb",0.0
+treno,treno,train,nm,0.7333333333333334
+radio,radio,radio,nf,1.0
+comune,comune,common,"adj, nm",0.7777777777777777
+cattivo,cattivo,bad,"adj, nm",0.4920634920634921
+imparato,imparare,to learn,verb,0.5
+responsabile,responsabile,responsible,"adj, nmf",0.9419191919191919
+farcela,farcela,to make it,verb,0.49523809523809526
+bomba,bomba,bomb,nf,0.9333333333333332
+periodo,periodo,period,nm,0.9523809523809524
+energia,energia,energy,nf,0.8492063492063492
+segno,segno,sign,nm,0.7833333333333333
+calmati,calmarsi,to calm down,"verb, sentence",0.576984126984127
+accidenti,accidente,damn,"interj, nm, pl",0.5740740740740741
+speranza,speranza,hope,nf,0.5833333333333334
+rischio,rischio,risk,nm,0.7261904761904763
+rosso,rosso,red,"adj, nm",0.5111111111111111
+soprattutto,soprattutto,especially,adv,0.5242424242424243
+combattere,combattere,to fight,verb,0.48333333333333334
+tocca,toccare,to touch,verb,0.6583333333333333
+operazione,operazione,operation,nf,0.8962962962962964
+sexy,sexy,sexy,adj,1.0
+gamba,gamba,leg,nf,0.0
+biglietto,biglietto,ticket,nm,0.611111111111111
+ufficiale,ufficiale,official,"adj, nm",0.8842592592592592
+pressione,pressione,pressure,nf,0.8055555555555555
+seguito,seguire,followed,"adj, nm, verb",0.4226190476190476
+nascosto,nascondere,hidden,"adj, verb",0.0
+maestro,maestro,teacher,"nm, adj",0.5079365079365079
+benvenuto,benvenuto,welcome,"adj, nm, interj",0.5026455026455027
+offerta,offerta,offer,nf,0.9047619047619048
+vite,vite,screw,nf,0.48333333333333334
+scherzo,scherzo,joke,nm,0.46428571428571425
+finta,finto,feint,"nf, adj",0.8666666666666667
+testimone,testimone,witness,nmf,0.5052910052910052
+banca,banca,bank,nf,0.7833333333333333
+stronzate,stronzata,nonsense,"nf, pl",0.5648148148148148
+indirizzo,indirizzo,address,nm,0.5026455026455027
+tale,tale,such,"adj, pron, nm",0.0
+ottenere,ottenere,to obtain,verb,0.4583333333333333
+jim,gym,gym,nf,0.5555555555555555
+esperienza,esperienza,experience,nf,0.7999999999999999
+messa,messa,mass,nf,0.7833333333333333
+piangere,piangere,to cry,verb,0.4305555555555555
+bill,bill,bill,nm,1.0
+tony,tony,tracksuit,nm,0.4537037037037037
+sud,sud,south,nm,0.6888888888888888
+pianeta,pianeta,planet,nm,0.8492063492063492
+inoltre,inoltre,moreover,"adv, conj",0.6011904761904762
+serie,serie,series,nf,0.9444444444444445
+ray,ray,ray,nm,1.0
+porca,porco,pig,"nf, adj",0.5111111111111111
+guida,guidare,guide,"verb, nf",0.8666666666666667
+prezzo,prezzo,price,nm,0.7000000000000001
+arrabbiato,arrabbiare,angry,"adj, verb",0.5333333333333333
+orribile,orribile,horrible,adj,0.9166666666666666
+ritorno,ritornare,return,"nm, verb",0.746031746031746
+animali,animale,animals,"nm, pl",0.9047619047619048
+enorme,enorme,enormous,adj,0.8194444444444445
+harry,harrire,to harry,verb,0.875
+passaggio,passaggio,passage,nm,0.8412698412698413
+progetto,progetto,project,nm,0.7797619047619048
+danno,danno,damage,nm,0.5777777777777778
+naturalmente,naturalmente,naturally,adv,0.7870370370370371
+colpevole,colpevole,guilty,"adj, nmf",0.4259259259259259
+ragazzino,ragazzino,young boy,nm,0.48148148148148145
+metri,metro,meters,"nm, pl",0.8222222222222223
+tommy,tommy,Tommy,nm,0.8666666666666667
+mossa,mossa,move,nf,0.6333333333333333
+finestra,finestra,window,nf,0.5277777777777778
+suppongo,supporre,to suppose,verb,0.6722222222222222
+destino,destino,destiny,nm,0.9047619047619048
+saltare,saltare,to jump,verb,0.0
+correre,correre,to run,verb,0.5396825396825397
+frega,fregare,to care,verb,0.44761904761904764
+edificio,edificio,building,nm,0.47222222222222215
+colazione,colazione,breakfast,nf,0.40740740740740744
+collo,collo,neck,nm,0.0
+difesa,difesa,defense,nf,0.6626984126984127
+fiducia,fiducia,trust,nf,0.44761904761904764
+ristorante,ristorante,restaurant,nm,0.7523809523809524
+laboratorio,laboratorio,laboratory,nm,0.9060606060606061
+comando,comandare,command,"nm, verb",0.9047619047619048
+arte,arte,art,nf,0.9166666666666666
+meta,meta,goal,nf,0.5
+discorso,discorso,speech,nm,0.5277777777777778
+nove,nove,nine,"num, nm",0.6666666666666666
+segnale,segnale,signal,nm,0.8492063492063492
+fortunato,fortunato,lucky,"adj, nm",0.43703703703703706
+carriera,carriera,career,nf,0.7527777777777779
+blu,blu,blue,"adj, nm",0.9166666666666666
+cominciare,cominciare,to start,verb,0.5583333333333333
+muro,muro,wall,nm,0.0
+will,volontà,will,nf,1.0
+tranne,tranne,except,"prep, conj",0.4444444444444444
+bob,bob,bob,nm,1.0
+proteggere,proteggere,to protect,verb,0.5333333333333333
+dubbio,dubbio,doubt,nm,0.7000000000000001
+stazione,stazione,station,nf,0.8690476190476191
+emergenza,emergenza,emergency,nf,0.8518518518518517
+giustizia,giustizia,justice,nf,0.5052910052910052
+immediatamente,immediatamente,immediately,adv,0.8203463203463204
+odore,odore,smell,nm,0.0
+college,college,boarding school,nm,0.47301587301587295
+contrario,contrario,opposite,"adj, nm",0.4583333333333333
+terzo,terzo,third,"adj, nm",0.6
+locale,locale,local,"adj, nm",0.9444444444444445
+battaglia,battaglia,battle,nf,0.7962962962962963
+notato,notare,noticed,"verb, adj",0.6428571428571429
+sceriffo,sceriffo,sheriff,nm,0.8690476190476191
+evitare,evitare,to avoid,verb,0.4900793650793651
+spirito,spirito,spirit,nm,0.9523809523809524
+seduto,seduto,sitting,"adj, nm",0.5396825396825397
+ryan,ryan,Ryan,nm,0.8333333333333334
+lingua,lingua,language,nf,0.8194444444444445
+dipartimento,dipartimento,department,nm,0.8833333333333333
+massimo,massimo,maximum,"adj, nm",0.7142857142857143
+praticamente,praticamente,practically,adv,0.6922799422799423
+riunione,riunione,meeting,nf,0.5119047619047619
+rumore,rumore,noise,nm,0.5777777777777778
+torta,torta,cake,nf,0.0
+accanto,accanto,beside,"adv, prep",0.0
+eroe,eroe,hero,nm,0.8333333333333334
+turno,turno,turn,nm,0.9333333333333332
+entrambe,entrambi,both,"adj, pron",0.4583333333333333
+londra,londra,London,nf,0.6666666666666666
+fiori,fiore,flowers,"nm, pl",0.6761904761904761
+persino,persino,even,adv,0.5952380952380952
+ovvio,ovvio,obvious,adj,0.7904761904761904
+furgone,furgone,van,nm,0.0
+amy,amy,ami,nm,0.7777777777777777
+coppia,coppia,couple,nf,0.6666666666666666
+ridere,ridere,to laugh,verb,0.0
+pausa,pausa,pause,nf,0.8666666666666667
+billy,billy,billy goat,nm,0.8333333333333334
+grave,grave,serious,adj,0.44761904761904764
+memoria,memoria,memory,nf,0.8492063492063492
+cosi',cosi',thus,"adv, conj",0.48333333333333334
+naso,naso,nose,nm,0.6666666666666666
+nemico,nemico,enemy,"nm, adj",0.5888888888888889
+colonnello,colonnello,colonel,nm,0.9
+richard,Richard,Richard,nm,0.9047619047619048
+costa,costare,coast,"nf, verb",0.8666666666666667
+laggiù,laggiù,down there,adv,0.0
+scatola,scatola,box,nf,0.0
+albero,albero,tree,nm,0.47222222222222215
+tribunale,tribunale,court,nm,0.37407407407407406
+razza,razza,race,nf,0.6333333333333333
+anello,anello,ring,nm,0.47222222222222215
+ferita,ferita,wound,nf,0.0
+ferito,ferito,wounded,"adj, nm",0.0
+cerchi,cerchio,circles,"nm, pl",0.6428571428571429
+sentimenti,sentimento,feelings,"nm, pl",0.5499999999999999
+arresto,arresto,arrest,nm,0.9523809523809524
+soldato,soldato,soldier,nm,0.7142857142857143
+natura,natura,nature,nf,0.888888888888889
+inutile,inutile,useless,adj,0.6190476190476191
+colore,colore,color,nm,0.9444444444444445
+basso,basso,low,"adj, nm",0.0
+don,don,don,nm,1.0
+anzi,anzi,rather,"adv, conj",0.47222222222222215
+daniel,Daniel,Daniel,nm,0.888888888888889
+preferito,preferito,favorite,"adj, nm",0.5935185185185184
+utile,utile,useful,"adj, nm",0.5888888888888889
+parigi,Parigi,Paris,f,0.7000000000000001
+kevin,kevin,Kevin,nm,0.8666666666666667
+professore,professore,teacher,nm,0.46507936507936504
+fidanzato,fidanzato,fiancé,"adj, nm",0.7037037037037037
+legale,legale,legal,"adj, nmf",0.9444444444444445
+compito,compito,task,nm,0.0
+srt,short,short,adj,0.5111111111111111
+corte,corto,short,"adj, pl",0.7333333333333334
+pesce,pesce,fish,nm,0.48333333333333334
+johnny,johnny,Johnny,nm,0.888888888888889
+obiettivo,obiettivo,objective,"nm, adj",0.7777777777777777
+nato,nascere,born,"adj, verb",0.0
+show,show,to show,verb,0.46428571428571425
+conta,contare,to count,"verb, nf",0.5472222222222222
+accesso,accesso,access,nm,0.9523809523809524
+breve,breve,short,"adj, nm",0.0
+risolvere,risolvere,to solve,verb,0.6601851851851852
+isola,isola,island,nf,0.8222222222222223
+povero,povero,poor,"adj, nm",0.75
+stavolta,stavolta,this time,adv,0.4583333333333333
+mark,marca,brand,"f, pl",0.4666666666666666
+affrontare,affrontare,to face,verb,0.5738095238095239
+opera,opera,work,nf,0.6333333333333333
+anna,annaffiare,I water,verb,0.46428571428571425
+ballare,ballare,to dance,verb,0.5119047619047619
+bacio,bacio,kiss,nm,0.0
+resti,resto,remains,"nm, pl",0.6761904761904761
+bordo,bordo,edge,nm,0.0
+sbaglio,sbaglio,mistake,nm,0.5238095238095238
+verde,verde,green,"adj, nm",0.6222222222222222
+improvviso,improvviso,sudden,"adj, nm",0.0
+fianco,fianco,side,nm,0.47222222222222215
+alzati,alzarsi,to get up,verb,0.4259259259259259
+accettare,accettare,to accept,verb,0.7037037037037037
+metà,metà,half,nf,0.0
+continuo,continuo,continuous,"adj, nm",0.9333333333333332
+peso,peso,weight,nm,0.47222222222222215
+stile,stile,style,nm,0.8666666666666667
+corsa,corsa,race,nf,0.0
+entrata,entrata,entrance,nf,0.7797619047619048
+soluzione,soluzione,solution,nf,0.8842592592592592
+maria,maria,Mary,nf,0.6333333333333333
+fanculo,fanculo,fuck off,interj,0.6071428571428571
+contratto,contratto,contract,nm,0.8842592592592592
+arrabbiata,arrabbiato,angry,"adj, nf",0.5333333333333333
+retro,retro,back,"nm, adj, adv",0.0
+meraviglioso,meraviglioso,wonderful,adj,0.5277777777777778
+denti,dente,teeth,"nm, pl",0.6
+fidati,fidarsi,to trust,verb,0.4305555555555555
+sveglia,sveglia,alarm clock,nf,0.48917748917748916
+ultimamente,ultimamente,lately,adv,0.5934343434343434
+creato,creare,created,"verb, adj, m",0.8492063492063492
+dipende,dipendere,to depend,verb,0.7301587301587301
+innocente,innocente,innocent,"adj, nmf",0.9629629629629629
+scopo,scopo,purpose,nm,0.3952380952380952
+coltello,coltello,knife,nm,0.44166666666666665
+chris,Chris,Chris,nmf,0.8666666666666667
+fila,fila,row,nf,0.0
+magia,magia,magic,nf,0.8666666666666667
+procuratore,procuratore,prosecutor,nm,0.8007575757575758
+vendere,vendere,to sell,verb,0.42857142857142855
+pantaloni,pantalone,trousers,"m, pl",0.41203703703703703
+miss,miss,miss,nf,1.0
+centrale,centrale,central,"adj, nf",0.9583333333333334
+azione,azione,action,nf,0.7777777777777777
+principe,principe,prince,nm,0.9166666666666666
+cadavere,cadavere,corpse,nm,0.5277777777777778
+chiusa,chiuso,closed,"adj, nf",0.5555555555555555
+fede,fede,faith,nf,0.48333333333333334
+nipote,nipote,grandchild,nmf,0.4222222222222222
+riuscita,riuscita,success,nf,0.4900793650793651
+stampa,stampare,press,"nf, verb",0.0
+assistente,assistente,assistant,nmf,0.8962962962962964
+ognuno,ognuno,everyone,pron,0.3611111111111111
+robert,rompere,to break,verb,0.6388888888888888
+debole,debole,weak,"adj, nmf",0.47222222222222215
+risultati,risultato,results,"nm, pl",0.7566137566137566
+ridicolo,ridicolo,ridiculous,"adj, nm",0.8107142857142856
+vaffanculo,vaffanculo,fuck you,interj,0.5499999999999999
+andarci,andarci,to go there,verb,0.0
+adam,adamante,adamant,"adj, nm",0.8571428571428571
+grandioso,grandioso,grand,adj,0.8518518518518517
+americano,americano,American,"adj, nm",0.8842592592592592
+gesù,gesù,Jesus,nm,0.6333333333333333
+francese,francese,French,"adj, nmf",0.6388888888888888
+taxi,taxi,taxi,nm,1.0
+sottotitoli,sottotitolo,subtitles,"nm, pl",0.6033670033670034
+peggiore,peggiore,worse,"adj, nmf",0.44166666666666665
+angolo,angolo,corner,nm,0.38888888888888884
+latte,latte,milk,nm,0.0
+buio,buio,darkness,"nm, adj",0.0
+malattia,malattia,disease,nf,0.4226190476190476
+gatto,gatto,cat,nm,0.6888888888888888
+suona,suonare,to play,verb,0.5619047619047619
+brian,brire,howls,"verb, m, pl",0.0
+estate,estate,summer,nf,0.5555555555555555
+scomparsa,scomparso,disappearance,"nf, adj",0.5133903133903134
+condizioni,condizione,conditions,"nf, pl",0.8666666666666667
+muoviti,muovere,to move,"verb, sentence",0.5238095238095238
+charles,charles,Charles,nm,0.9047619047619048
+angeles,angelo,angels,"nm, pl",0.9523809523809524
+fiume,fiume,river,nm,0.6
+schiena,schiena,back,nf,0.46428571428571425
+sindaco,sindaco,mayor,nm,0.0
+nonostante,nonostante,despite,"prep, conj, adv",0.5761904761904763
+campagna,campagna,countryside,nf,0.4772727272727273
+scott,cuocere,cooked,"adj, verb",0.5777777777777778
+coglione,coglione,idiot,"nm, adj",0.3833333333333333
+rachel,rachel,Rachel,nf,0.888888888888889
+bobby,bobby,bobby pin,nm,0.8518518518518517
+dettagli,dettaglio,details,"nm, pl",0.8134920634920636
+chiaramente,chiaramente,clearly,adv,0.5670995670995671
+capace,capace,capable,adj,0.8492063492063492
+distrutto,distruggere,destroyed,"adj, verb",0.7037037037037037
+importanza,importanza,importance,nf,0.8666666666666667
+particolare,particolare,particular,"adj, nm",0.9060606060606061
+stanco,stanco,tired,adj,0.45555555555555555
+mantenere,mantenere,to maintain,verb,0.436026936026936
+richiesta,richiesta,request,nf,0.671957671957672
+parecchio,parecchio,a lot,"adj, adv, pron",0.43703703703703706
+principale,principale,main,"adj, nmf",0.5666666666666667
+rose,rosa,pink,"adj, nm",0.0
+insegnato,insegnare,taught,"verb, adj",0.5185185185185185
+faccenda,faccenda,matter,nf,0.5277777777777778
+vento,vento,wind,nm,0.48333333333333334
+matto,matto,mad,"adj, nm",0.6888888888888888
+convinto,convincere,convinced,"adj, verb",0.8055555555555555
+rovinato,rovinare,ruined,"adj, verb",0.625
+campione,campione,champion,nm,0.9166666666666666
+buonasera,buonasera,good evening,"f, interj",0.4166666666666667
+decisamente,decisamente,decidedly,adv,0.6700336700336701
+washington,Washington,Washington,nm,0.9333333333333332
+sbagliata,sbagliato,wrong,adj,0.43703703703703706
+mercato,mercato,market,nm,0.6428571428571429
+valore,valore,value,nm,0.8222222222222223
+sbrigati,sbrigarsi,hurry up,verb,0.4166666666666667
+salire,salire,to go up,verb,0.0
+spiegare,spiegare,to explain,verb,0.44722222222222224
+eddie,eddie,Eddie,m,0.8666666666666667
+bellezza,bellezza,beauty,nf,0.5277777777777778
+rilassati,rilassato,relaxed,"adj, verb",0.5873015873015873
+buco,buco,hole,nm,0.0
+conversazione,conversazione,conversation,nf,0.9209401709401709
+attesa,attesa,wait,nf,0.611111111111111
+pensiero,pensiero,thought,nm,0.0
+conoscenza,conoscenza,knowledge,nf,0.4333333333333333
+ponte,ponte,bridge,nm,0.45555555555555555
+malato,malato,sick,"adj, nm",0.0
+sedia,sedia,chair,nf,0.4666666666666666
+walter,walter,Walter,nm,0.888888888888889
+finale,finale,final,"adj, nm, nf",0.9444444444444445
+impronte,impronta,fingerprints,"nf, pl",0.6388888888888888
+sistemare,sistemare,to arrange,verb,0.6148148148148148
+emma,emma,Emma,nf,0.8333333333333334
+emily,emily,Emily,nf,0.8666666666666667
+ghiaccio,ghiaccio,ice,nm,0.6388888888888888
+tracce,traccia,traces,"nf, pl",0.888888888888889
+bottiglia,bottiglia,bottle,nf,0.7962962962962963
+indagine,indagine,investigation,nf,0.6260683760683761
+super,super,great,"adj, adv, nm",0.4666666666666666
+eppure,eppure,yet,"adv, conj",0.5
+fottuto,fottere,fucking,"adj, verb",0.42857142857142855
+tiro,tiro,shot,nm,0.5
+cadere,cadere,to fall,verb,0.0
+ll,lo,it,pron,0.0
+sguardo,sguardo,look,nm,0.0
+perdita,perdita,loss,nf,0.0
+camminare,camminare,to walk,"verb, nm",0.41798941798941797
+eccoci,eccoci,here we are,"interj, pron",0.41919191919191917
+pratica,pratico,practice,"nf, adj",0.8134920634920636
+villaggio,villaggio,village,nm,0.8412698412698413
+scuse,scusa,excuses,"nf, pl",0.7904761904761904
+fantasma,fantasma,ghost,nm,0.3833333333333333
+preferisco,preferire,to prefer,verb,0.7555555555555555
+ispettore,ispettore,inspector,nm,0.8518518518518517
+teoria,teoria,theory,nf,0.7777777777777777
+camion,camion,truck,nm,0.0
+parco,parco,park,nm,0.7833333333333333
+palazzo,palazzo,building,nm,0.4226190476190476
+privato,privato,private,"adj, nm",0.9047619047619048
+troia,troia,prostitute,nf,0.65
+purtroppo,purtroppo,unfortunately,adv,0.5007122507122507
+preoccupata,preoccupato,worried,adj,0.45598845598845594
+area,area,area,nf,1.0
+accusa,accusa,accusation,nf,0.8666666666666667
+martin,mattino,morning,"m, nm",0.6626984126984127
+stelle,stella,stars,"nf, pl",0.5777777777777778
+direttamente,direttamente,directly,adv,0.6805555555555557
+cento,cento,hundred,num,0.44761904761904764
+andarmene,andaresene,to leave,verb,0.4583333333333333
+seriamente,seriamente,seriously,adv,0.6148148148148148
+pista,pista,track,nf,0.0
+desiderio,desiderio,desire,nm,0.8333333333333334
+ubriaco,ubriaco,drunk,"adj, nm",0.3952380952380952
+tradurre,tradurre,to translate,verb,0.611111111111111
+popolo,popolo,people,nm,0.7777777777777777
+dita,dito,fingers,"nf, pl",0.46428571428571425
+infermiera,infermiere,nurse,nf,0.5222222222222221
+altezza,altezza,height,nf,0.4365079365079365
+seduta,sedere,sitting,"nf, adj, verb",0.5396825396825397
+minaccia,minacciare,threat,"nf, verb",0.4305555555555555
+età,età,age,nf,0.0
+nazionale,nazionale,national,"adj, nf",0.8842592592592592
+genio,genio,genius,m,0.8222222222222223
+cinema,cinema,cinema,nm,1.0
+tetto,tetto,roof,nm,0.0
+josh,josh,josh,verb,1.0
+media,medio,average,"adj, nf",0.5619047619047619
+politica,politico,politics,"nf, adj",0.9166666666666666
+copertura,copertura,coverage,nf,0.7268518518518517
+internet,internet,internet,nm,1.0
+eric,erica,heather,nf,0.46428571428571425
+occupato,occupare,busy,"adj, verb",0.4583333333333333
+sposata,sposato,married,adj,0.0
+cancro,cancro,cancer,nm,0.888888888888889
+compagno,compagno,companion,"nm, adj",0.8842592592592592
+merito,meritare,merit,"nm, verb",0.9444444444444445
+società,società,society,nf,0.9047619047619048
+spada,spada,sword,nf,0.6
+scendere,scendere,to go down,verb,0.4083333333333334
+leggi,legge,laws,"nf, pl",0.48333333333333334
+pete,peta,spots,"nf, pl",0.6333333333333333
+perfettamente,perfettamente,perfectly,adv,0.7094017094017094
+bicchiere,bicchiere,glass,nm,0.0
+autobus,autobus,bus,nm,0.4920634920634921
+vuoto,vuoto,empty,"adj, nm",0.4666666666666666
+porte,porta,doors,"nf, pl",0.6
+jason,jason,Jason,nm,0.8666666666666667
+azienda,azienda,company,nf,0.35714285714285715
+sabato,sabato,Saturday,nm,0.5138888888888888
+pollo,pollo,chicken,nm,0.0
+spiaggia,spiaggia,beach,nf,0.44166666666666665
+ordinato,ordinato,orderly,adj,0.6011904761904762
+gesu,Gesù,Jesus,nm,0.7833333333333333

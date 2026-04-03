@@ -136,4 +136,3 @@ The `generate.py` must output a CSV conforming to [`spreadsheets/schema.md`](spr
 | `Pillow` | Generate card images |
 | `pyyaml` | Read `config.yaml` files |
 | `pandas` | Optional — useful for data cleaning in generators |
-# italiananki

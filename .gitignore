@@ -29,6 +29,9 @@ media/images/*
 !media/audio/.gitkeep
 !media/images/.gitkeep
 
+# Tuttobene — exclude any file or directory with this name
+*tuttobene*
+
 # API keys — never commit secrets
 .openai
 .openrouter
