@@ -3,8 +3,9 @@
 """
 Generate one Anki .apkg per spreadsheet CSV.
 
-Reads:   spreadsheets/*.csv     (columns: front_text, front_labels, back_highlight, back_text, audio)
+Reads:   spreadsheets/*.csv     (columns: front_text, front_labels, back_highlight, back_text, audio, image)
 Reads:   media/audio/*.mp3      (filenames = md5(audio_text).mp3, produced by builder/1_generate_audio.py)
+Reads:   media/images/*.png     (filenames = base64(image_key).png, produced by builder/2_generate_images.py)
 Writes:  output/<stem>.apkg     (one package per source CSV)
 """
 
@@ -21,6 +22,7 @@ PROJECT_ROOT = SCRIPT_DIR.parent
 
 SPREADSHEETS_DIR = PROJECT_ROOT / "spreadsheets"
 AUDIO_DIR = PROJECT_ROOT / "media" / "audio"
+IMAGE_DIR = PROJECT_ROOT / "media" / "images"
 OUTPUT_DIR = PROJECT_ROOT / "output"
 
 # ---------------------------------------------------------------------------
@@ -48,6 +50,12 @@ def audio_filename(text: str) -> str:
     """MD5-hash filename matching builder/1_generate_audio.py."""
     digest = hashlib.md5(text.encode("utf-8")).hexdigest()
     return f"{digest}.mp3"
+
+
+def image_filename(key: str) -> str:
+    """MD5-hash filename matching builder/2_generate_images.py."""
+    digest = hashlib.md5(key.encode("utf-8")).hexdigest()
+    return f"{digest}.png"
 
 
 def labels_html(front_labels: str) -> str:
@@ -147,10 +155,22 @@ hr#answer {
   border-top: 1px solid #ddd;
   margin: 20px 0;
 }
+
+.card-image {
+  margin-bottom: 14px;
+}
+
+.card-image img {
+  max-width: 180px;
+  max-height: 180px;
+  border-radius: 10px;
+  object-fit: cover;
+}
 """
 
     qfmt = """
 <div class="card-container">
+  {{#Image}}<div class="card-image">{{Image}}</div>{{/Image}}
   {{FrontLabels}}
   <div class="front-text">{{FrontText}}</div>
 </div>
@@ -168,13 +188,14 @@ hr#answer {
 
     return genanki.Model(
         MODEL_ID,
-        "Italian Anki Model v1",
+        "Italian Anki Model v2",
         fields=[
             {"name": "FrontText"},
             {"name": "FrontLabels"},
             {"name": "BackHighlight"},
             {"name": "BackText"},
             {"name": "Audio"},
+            {"name": "Image"},
         ],
         templates=[
             {
@@ -196,6 +217,7 @@ def build_deck(csv_path: Path, deck_name: str, deck_id: int, model: genanki.Mode
     Read a spreadsheet CSV and return a populated Deck plus stats.
     Returns: (deck, media_files, notes_added, notes_missing_audio)
     """
+    stem = csv_path.stem
     deck = genanki.Deck(deck_id, deck_name)
     media_files: list[str] = []
     notes_added = 0
@@ -208,6 +230,7 @@ def build_deck(csv_path: Path, deck_name: str, deck_id: int, model: genanki.Mode
             back_highlight = row.get("back_highlight", "").strip()
             back_text = row.get("back_text", "").strip()
             audio_text = row.get("audio", "").strip()
+            image_prompt = row.get("image", "").strip()
 
             if not front_text:
                 continue
@@ -225,14 +248,33 @@ def build_deck(csv_path: Path, deck_name: str, deck_id: int, model: genanki.Mode
             else:
                 audio_field = ""
 
+            # Resolve image
+            if image_prompt:
+                fname = image_filename(image_prompt)
+                img_path = IMAGE_DIR / fname
+                if img_path.exists() and img_path.stat().st_size > 0:
+                    image_field = f'<img src="{fname}">'
+                    media_files.append(str(img_path))
+                else:
+                    image_field = ""
+            else:
+                image_field = ""
+
+            # Stable GUID: based only on content fields, never on media fields.
+            # This ensures Anki updates existing notes rather than creating new
+            # ones when audio or images are added/changed between runs.
+            guid = genanki.guid_for(stem, front_text, back_text)
+
             note = genanki.Note(
                 model=model,
+                guid=guid,
                 fields=[
                     front_text,
                     labels_html(front_labels_raw),
                     back_highlight,
                     back_text,
                     audio_field,
+                    image_field,
                 ],
             )
             deck.add_note(note)

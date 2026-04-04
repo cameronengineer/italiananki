@@ -13,6 +13,7 @@ Card format (production — English front, Italian back):
   back_highlight = full inflected forms string (e.g. "primo/a/i/e")
   back_text     = ""
   audio         = base form (e.g. "primo")
+  image         = prompt for an illustration of the English concept (one per row)
 """
 
 import csv
@@ -23,7 +24,7 @@ PROJECT_ROOT = pathlib.Path(__file__).resolve().parents[2]
 INPUT_CSV = pathlib.Path(__file__).resolve().parent / "adjectives_translated.csv"
 OUTPUT_CSV = PROJECT_ROOT / "spreadsheets" / "adjectives.csv"
 
-FIELDNAMES = ["front_text", "front_labels", "back_highlight", "back_text", "audio"]
+FIELDNAMES = ["front_text", "front_labels", "back_highlight", "back_text", "audio", "image"]
 
 
 def main() -> None:
@@ -54,6 +55,7 @@ def main() -> None:
                     "back_highlight": italian,
                     "back_text": "",
                     "audio": base_form,
+                    "image": f"A simple illustration of the concept of {english}",
                 }
             )
             rows_written += 1

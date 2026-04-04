@@ -10,6 +10,7 @@ Card format (production — English front, Italian back):
   back_highlight = Italian infinitive (e.g. "essere")
   back_text     = ""
   audio         = Italian infinitive
+  image         = prompt for an illustration of the verb action (one per row)
 """
 
 import csv
@@ -20,7 +21,7 @@ PROJECT_ROOT = pathlib.Path(__file__).resolve().parents[2]
 INPUT_CSV = pathlib.Path(__file__).resolve().parent / "verbs_translated.csv"
 OUTPUT_CSV = PROJECT_ROOT / "spreadsheets" / "verbs_infinito.csv"
 
-FIELDNAMES = ["front_text", "front_labels", "back_highlight", "back_text", "audio"]
+FIELDNAMES = ["front_text", "front_labels", "back_highlight", "back_text", "audio", "image"]
 
 
 def main() -> None:
@@ -41,6 +42,9 @@ def main() -> None:
             if not italian or not english:
                 continue
 
+            # Strip leading "to " for a cleaner image prompt
+            action = english[3:] if english.lower().startswith("to ") else english
+
             writer.writerow(
                 {
                     "front_text": english,
@@ -48,6 +52,7 @@ def main() -> None:
                     "back_highlight": italian,
                     "back_text": "",
                     "audio": italian,
+                    "image": f"A simple illustration of the action of {action}",
                 }
             )
             rows_written += 1
