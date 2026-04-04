@@ -157,14 +157,13 @@ hr#answer {
 }
 
 .card-image {
-  margin-bottom: 14px;
+  margin-top: 14px;
 }
 
 .card-image img {
-  max-width: 180px;
-  max-height: 180px;
+  height: 540px;
+  width: auto;
   border-radius: 10px;
-  object-fit: cover;
 }
 """
 
@@ -212,16 +211,17 @@ hr#answer {
 # Main
 # ---------------------------------------------------------------------------
 
-def build_deck(csv_path: Path, deck_name: str, deck_id: int, model: genanki.Model) -> tuple[genanki.Deck, list[str], int, int]:
+def build_deck(csv_path: Path, deck_name: str, deck_id: int, model: genanki.Model) -> tuple[genanki.Deck, list[str], int, int, int]:
     """
     Read a spreadsheet CSV and return a populated Deck plus stats.
-    Returns: (deck, media_files, notes_added, notes_missing_audio)
+    Returns: (deck, media_files, notes_added, notes_missing_audio, notes_missing_image)
     """
     stem = csv_path.stem
     deck = genanki.Deck(deck_id, deck_name)
     media_files: list[str] = []
     notes_added = 0
     missing_audio = 0
+    missing_image = 0
 
     with open(csv_path, encoding="utf-8", newline="") as f:
         for row in csv.DictReader(f):
@@ -257,6 +257,7 @@ def build_deck(csv_path: Path, deck_name: str, deck_id: int, model: genanki.Mode
                     media_files.append(str(img_path))
                 else:
                     image_field = ""
+                    missing_image += 1
             else:
                 image_field = ""
 
@@ -280,7 +281,7 @@ def build_deck(csv_path: Path, deck_name: str, deck_id: int, model: genanki.Mode
             deck.add_note(note)
             notes_added += 1
 
-    return deck, media_files, notes_added, missing_audio
+    return deck, media_files, notes_added, missing_audio, missing_image
 
 
 def main() -> None:
@@ -289,6 +290,7 @@ def main() -> None:
 
     total_notes = 0
     total_missing_audio = 0
+    total_missing_image = 0
 
     for csv_path in sorted(SPREADSHEETS_DIR.glob("*.csv")):
         stem = csv_path.stem
@@ -296,7 +298,7 @@ def main() -> None:
         deck_id = deck_id_for(stem)
         output_apkg = OUTPUT_DIR / f"{stem}.apkg"
 
-        deck, media_files, notes_added, missing_audio = build_deck(
+        deck, media_files, notes_added, missing_audio, missing_image = build_deck(
             csv_path, deck_name, deck_id, model
         )
 
@@ -306,10 +308,12 @@ def main() -> None:
 
         total_notes += notes_added
         total_missing_audio += missing_audio
+        total_missing_image += missing_image
 
         print(
             f"  {deck_name:<40}  {notes_added:>5} notes"
             f"  ({missing_audio} without audio)"
+            f"  ({missing_image} without image)"
             f"  → {output_apkg.name}"
         )
 
@@ -317,6 +321,7 @@ def main() -> None:
         f"\nFinished."
         f"\n  Total notes written       : {total_notes}"
         f"\n  Total missing audio       : {total_missing_audio}"
+        f"\n  Total missing image       : {total_missing_image}"
         f"\n  Output dir                : {OUTPUT_DIR}"
     )
 

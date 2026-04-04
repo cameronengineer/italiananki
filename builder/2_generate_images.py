@@ -13,9 +13,12 @@ PNG file, so rows that share the same image value all map to the same file.
 Skips entries where the output file already exists and is non-empty (resume).
 
 Usage (from project root, with .venv activated):
-    python builder/2_generate_images.py
+    python builder/2_generate_images.py                  # all CSVs
+    python builder/2_generate_images.py cafe             # single CSV
+    python builder/2_generate_images.py cafe nouns       # multiple CSVs
 """
 
+import argparse
 import base64
 import csv
 import hashlib
@@ -79,15 +82,19 @@ def build_prompt(image_key: str) -> str:
     )
 
 
-def collect_entries(spreadsheets_dir: Path) -> list[tuple[str, str]]:
+def collect_entries(spreadsheets_dir: Path, only: list[str] | None = None) -> list[tuple[str, str]]:
     """
-    Walk all CSVs in spreadsheets_dir and collect unique (source_label, image_key)
+    Walk CSVs in spreadsheets_dir and collect unique (source_label, image_key)
     pairs from the `image` column. Deduplicates by image key.
+
+    If `only` is given, restrict to those stems (e.g. ["cafe", "nouns"]).
     Returns list of (source_label, image_key).
     """
     seen: dict[str, str] = {}  # image_key -> first source label
 
     for csv_path in sorted(spreadsheets_dir.glob("*.csv")):
+        if only and csv_path.stem not in only:
+            continue
         with open(csv_path, encoding="utf-8", newline="") as f:
             reader = csv.DictReader(f)
             if "image" not in (reader.fieldnames or []):
@@ -189,11 +196,24 @@ def run_task(
 # Main
 # ---------------------------------------------------------------------------
 def main() -> None:
+    parser = argparse.ArgumentParser(description="Generate flashcard images.")
+    parser.add_argument(
+        "csvs",
+        nargs="*",
+        metavar="CSV",
+        help="Spreadsheet stem(s) to process (e.g. cafe nouns). Omit to process all.",
+    )
+    args = parser.parse_args()
+    only = args.csvs or None
+
     api_key = load_api_key(API_KEY_FILE)
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
-    print(f"Scanning spreadsheets in {SPREADSHEETS_DIR} ...")
-    entries = collect_entries(SPREADSHEETS_DIR)
+    if only:
+        print(f"Scanning spreadsheets in {SPREADSHEETS_DIR} (filtered: {', '.join(only)}) ...")
+    else:
+        print(f"Scanning spreadsheets in {SPREADSHEETS_DIR} ...")
+    entries = collect_entries(SPREADSHEETS_DIR, only=only)
 
     if not entries:
         print("No image keys found. Nothing to do.")
