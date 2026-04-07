@@ -9,9 +9,9 @@ conjugated form is empty (partial conjugation run).
 
 Card format (production — English front, Italian back):
   front_text    = English meaning (e.g. "I am")
-  front_labels  = "infinitive: {italian} | tense: present | subject: {pronoun}"
+  front_labels  = "tense: present | subject: {pronoun}"
   back_highlight = conjugated form (e.g. "sono")
-  back_text     = ""
+  back_text     = Italian infinitive (e.g. "essere")
   audio         = conjugated form
   image         = prompt derived from the infinitive — shared across all 6 pronoun rows
 """
@@ -58,11 +58,9 @@ def main() -> None:
                 writer.writerow(
                     {
                         "front_text": english,
-                        "front_labels": (
-                            f"infinitive: {italian} | tense: {TENSE} | subject: {pronoun}"
-                        ),
+                        "front_labels": f"tense: {TENSE} | subject: {pronoun}",
                         "back_highlight": conjugated,
-                        "back_text": "",
+                        "back_text": italian,
                         "audio": conjugated,
                         "image": image_prompt,
                     }

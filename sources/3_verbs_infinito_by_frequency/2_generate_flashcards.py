@@ -6,7 +6,7 @@ Output: spreadsheets/verbs_infinito.csv
 
 Card format (production — English front, Italian back):
   front_text    = English meaning (e.g. "to be")
-  front_labels  = "infinitive"
+  front_labels  = "verb"
   back_highlight = Italian infinitive (e.g. "essere")
   back_text     = ""
   audio         = Italian infinitive
@@ -48,7 +48,7 @@ def main() -> None:
             writer.writerow(
                 {
                     "front_text": english,
-                    "front_labels": "infinitive",
+                    "front_labels": "verb",
                     "back_highlight": italian,
                     "back_text": "",
                     "audio": italian,

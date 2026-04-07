@@ -161,8 +161,10 @@ hr#answer {
 }
 
 .card-image img {
-  height: 540px;
+  max-height: 540px;
+  max-width: 100%;
   width: auto;
+  height: auto;
   border-radius: 10px;
 }
 """
