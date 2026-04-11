@@ -21,7 +21,9 @@ ENV/
 spreadsheets/*.csv
 output/*.apkg
 media/audio/*
+media/audio_compressed/*
 media/images/*
+media/images_compressed/*
 
 # Keep the directories themselves
 !spreadsheets/.gitkeep
@@ -51,3 +53,6 @@ Thumbs.db
 
 # Kilo AI config
 .kilo/
+
+# One-off scripts — not for committing
+generate_sensitive_images.py

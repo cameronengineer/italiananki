@@ -3,10 +3,10 @@
 """
 Generate one Anki .apkg per spreadsheet CSV.
 
-Reads:   spreadsheets/*.csv     (columns: front_text, front_labels, back_highlight, back_text, audio)
-Reads:   media/audio/*.mp3      (filenames = md5(audio_text).mp3, produced by builder/1_generate_audio.py)
-Reads:   media/images/*.png     (filenames = base64(image_key).png, produced by builder/2_generate_images.py)
-Writes:  output/<stem>.apkg     (one package per source CSV)
+Reads:   spreadsheets/*.csv              (columns: front_text, front_labels, back_highlight, back_text, audio)
+Reads:   media/audio_compressed/*.mp3    (produced by builder/3_compress_media.py; falls back to media/audio/)
+Reads:   media/images_compressed/*.jpg   (produced by builder/3_compress_media.py; falls back to media/images/)
+Writes:  output/<stem>.apkg              (one package per source CSV)
 """
 
 import csv
@@ -21,8 +21,10 @@ SCRIPT_DIR = Path(__file__).parent
 PROJECT_ROOT = SCRIPT_DIR.parent
 
 SPREADSHEETS_DIR = PROJECT_ROOT / "spreadsheets"
-AUDIO_DIR = PROJECT_ROOT / "media" / "audio"
-IMAGE_DIR = PROJECT_ROOT / "media" / "images"
+AUDIO_DIR  = PROJECT_ROOT / "media" / "audio_compressed"
+AUDIO_DIR_FALLBACK = PROJECT_ROOT / "media" / "audio"
+IMAGE_DIR  = PROJECT_ROOT / "media" / "images_compressed"
+IMAGE_DIR_FALLBACK = PROJECT_ROOT / "media" / "images"
 OUTPUT_DIR = PROJECT_ROOT / "output"
 
 # ---------------------------------------------------------------------------
@@ -64,10 +66,45 @@ def audio_filename(text: str) -> str:
     return f"{digest}.mp3"
 
 
-def image_filename(key: str) -> str:
-    """MD5-hash filename matching builder/2_generate_images.py."""
+def image_filename(key: str, ext: str = "jpg") -> str:
+    """MD5-hash filename. Compressed images are .jpg; originals are .png."""
     digest = hashlib.md5(key.encode("utf-8")).hexdigest()
-    return f"{digest}.png"
+    return f"{digest}.{ext}"
+
+
+def resolve_image(key: str) -> tuple[Path, str] | None:
+    """
+    Return (path, filename) for the image, preferring the compressed .jpg.
+    Falls back to the original .png if compressed version doesn't exist.
+    """
+    jpg_name = image_filename(key, "jpg")
+    jpg_path = IMAGE_DIR / jpg_name
+    if jpg_path.exists() and jpg_path.stat().st_size > 0:
+        return jpg_path, jpg_name
+
+    png_name = image_filename(key, "png")
+    png_path = IMAGE_DIR_FALLBACK / png_name
+    if png_path.exists() and png_path.stat().st_size > 0:
+        return png_path, png_name
+
+    return None
+
+
+def resolve_audio(text: str) -> tuple[Path, str] | None:
+    """
+    Return (path, filename) for the audio, preferring media/audio_compressed/.
+    Falls back to media/audio/ if compressed version doesn't exist.
+    """
+    fname = audio_filename(text)
+    compressed = AUDIO_DIR / fname
+    if compressed.exists() and compressed.stat().st_size > 0:
+        return compressed, fname
+
+    original = AUDIO_DIR_FALLBACK / fname
+    if original.exists() and original.stat().st_size > 0:
+        return original, fname
+
+    return None
 
 
 def labels_html(front_labels: str) -> str:
@@ -251,9 +288,9 @@ def build_deck(csv_path: Path, deck_name: str, deck_id: int, model: genanki.Mode
 
             # Resolve audio
             if audio_text:
-                fname = audio_filename(audio_text)
-                audio_path = AUDIO_DIR / fname
-                if audio_path.exists() and audio_path.stat().st_size > 0:
+                result = resolve_audio(audio_text)
+                if result:
+                    audio_path, fname = result
                     audio_field = f"[sound:{fname}]"
                     media_files.append(str(audio_path))
                 else:
@@ -264,9 +301,9 @@ def build_deck(csv_path: Path, deck_name: str, deck_id: int, model: genanki.Mode
 
             # Resolve image
             if image_key:
-                fname = image_filename(image_key)
-                img_path = IMAGE_DIR / fname
-                if img_path.exists() and img_path.stat().st_size > 0:
+                result = resolve_image(image_key)
+                if result:
+                    img_path, fname = result
                     image_field = f'<img src="{fname}">'
                     media_files.append(str(img_path))
                 else:
