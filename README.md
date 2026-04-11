@@ -17,7 +17,7 @@ A collection of Italian language Anki decks built from frequency-ranked word lis
 | Verbs — Imperfetto | 60 | ✓ | partial | *coming soon* |
 | Verbs — Presente Progressivo | 2,400 | partial | partial | *coming soon* |
 
-Verb conjugation decks (Presente, Passato Prossimo, Imperfetto, Presente Progressivo) contain 6 cards per verb — one for each subject pronoun (io, tu, lui/lei, noi, voi, loro). All conjugation decks share the same set of 400 infinitive-based images, so the image for `essere` is the same across every tense.
+Verb conjugation decks (Presente, Passato Prossimo, Imperfetto, Presente Progressivo) contain 6 cards per verb — one for each subject pronoun (io, tu, lui/lei, noi, voi, loro). All conjugation decks share the same set of 400 infinitive-based images — so the image for `essere`, for example, is the same across every tense.
 
 Audio and image generation is ongoing — decks marked *partial* will be updated as generation completes.
 
