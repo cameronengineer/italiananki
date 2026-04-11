@@ -27,7 +27,7 @@ FIELDNAMES = ["front_text", "front_labels", "back_highlight", "back_text", "audi
 
 PRONOUNS = ["io", "tu", "lui/lei", "noi", "voi", "loro"]
 TENSE    = "present progressive"
-VERB_LIMIT = 300
+VERB_LIMIT = 400
 
 
 def main() -> None:

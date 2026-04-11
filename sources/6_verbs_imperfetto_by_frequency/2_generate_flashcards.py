@@ -28,7 +28,7 @@ FIELDNAMES = ["front_text", "front_labels", "back_highlight", "back_text", "audi
 # Pronouns in frequency-natural order; use exact column header strings from the CSV.
 PRONOUNS = ["io", "tu", "lui/lei", "noi", "voi", "loro"]
 TENSE = "imperfect"
-VERB_LIMIT = 300
+VERB_LIMIT = 400
 
 
 def main() -> None:

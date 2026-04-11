@@ -12,10 +12,10 @@ A collection of Italian language Anki decks built from frequency-ranked word lis
 | Italiano Caffè | 184 | ✓ | ✓ | [Download](https://ankiweb.net/shared/info/872364471) |
 | Italiano Sostantivi | 1,000 | ✓ | ✓ | [Download](https://ankiweb.net/shared/info/750012174) |
 | Italiano Verbi Infinito | 400 | ✓ | ✓ | [Download](https://ankiweb.net/shared/info/1442694903) |
-| Italiano Verbi Presente | 1,800 | ✓ | ✓ | [Download](https://ankiweb.net/shared/info/269137193) |
-| Italiano Verbi Passato Prossimo | 1,800 | ✓ | ✓ | *coming soon* |
+| Italiano Verbi Presente | 2,400 | ✓ | ✓ | [Download](https://ankiweb.net/shared/info/269137193) |
+| Italiano Verbi Passato Prossimo | 2,400 | ✓ | ✓ | *coming soon* |
 | Italiano Verbi Imperfetto | 60 | ✓ | ✓ | *coming soon* |
-| Italiano Verbi Presente Progressivo | 1,800 | partial | ✓ | *coming soon* |
+| Italiano Verbi Presente Progressivo | 2,400 | partial | ✓ | *coming soon* |
 
 ---
 
@@ -34,16 +34,16 @@ The top 1,000 Italian nouns ranked by corpus frequency, each paired with its def
 The top 400 Italian verbs in infinitive form, ranked by frequency. A core reference deck — learn the base form and meaning of each verb before tackling the conjugation decks.
 
 ### Italiano Verbi Presente
-The top 300 Italian verbs fully conjugated in the presente indicativo (simple present). 6 cards per verb, one for each subject pronoun: io, tu, lui/lei, noi, voi, loro. 1,800 cards total.
+The top 400 Italian verbs fully conjugated in the presente indicativo (simple present). 6 cards per verb, one for each subject pronoun: io, tu, lui/lei, noi, voi, loro. 2,400 cards total.
 
 ### Italiano Verbi Passato Prossimo
-The top 300 Italian verbs conjugated in the passato prossimo (completed past, equivalent to "I have eaten" / "I ate"). 6 cards per verb, 1,800 cards total.
+The top 400 Italian verbs conjugated in the passato prossimo (completed past, equivalent to "I have eaten" / "I ate"). 6 cards per verb, 2,400 cards total.
 
 ### Italiano Verbi Imperfetto
 Italian verbs conjugated in the imperfetto (continuous or habitual past, equivalent to "I was eating" / "I used to eat"). 6 cards per verb. This deck is being expanded — more verbs will be added in future updates.
 
 ### Italiano Verbi Presente Progressivo
-The top 300 Italian verbs conjugated in the presente progressivo (e.g. *sto mangiando* — "I am eating"). 6 cards per verb, 1,800 cards total. Audio generation for this deck is ongoing and will be completed in a future update.
+The top 400 Italian verbs conjugated in the presente progressivo (e.g. *sto mangiando* — "I am eating"). 6 cards per verb, 2,400 cards total. Audio generation for this deck is ongoing and will be completed in a future update.
 
 ---
 
