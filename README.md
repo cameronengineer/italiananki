@@ -25,7 +25,7 @@ A collection of Italian language Anki decks built from frequency-ranked word lis
 Top 491 Italian adjectives ranked by corpus frequency. Each card covers all four inflected forms of the adjective (masculine/feminine, singular/plural) shown together on the back — e.g. *nuovo / nuova / nuovi / nuove*.
 
 ### Italiano Caffè
-184 cards covering practical everyday Italian. Vocabulary and phrases for situations you'll encounter immediately: greetings, ordering at a bar or restaurant, shopping, asking for directions, and common social expressions.
+184 cards covering vocabulary and phrases for ordering at an Italian café — drinks, food, making requests, and understanding the menu.
 
 ### Italiano Sostantivi
 The top 1,000 Italian nouns ranked by corpus frequency, each paired with its definite article — e.g. *la parte*, *il tempo*. Covers the words you will encounter most often in everyday reading and conversation.
