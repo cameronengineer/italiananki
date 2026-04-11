@@ -28,6 +28,7 @@ FIELDNAMES = ["front_text", "front_labels", "back_highlight", "back_text", "audi
 # Pronouns in frequency-natural order; use exact column header strings from the CSV.
 PRONOUNS = ["io", "tu", "lui/lei", "noi", "voi", "loro"]
 TENSE = "past"
+VERB_LIMIT = 300
 
 
 def main() -> None:
@@ -42,7 +43,10 @@ def main() -> None:
         writer = csv.DictWriter(out_f, fieldnames=FIELDNAMES, quoting=csv.QUOTE_MINIMAL)
         writer.writeheader()
 
+        verbs_written = 0
         for row in reader:
+            if verbs_written >= VERB_LIMIT:
+                break
             italian = row["italian"].strip()
             english_infinitive = row["english"].strip()
             for pronoun in PRONOUNS:
@@ -61,6 +65,7 @@ def main() -> None:
                     }
                 )
                 rows_written += 1
+            verbs_written += 1
 
     print(f"Wrote {rows_written} rows → {OUTPUT_CSV}")
 
