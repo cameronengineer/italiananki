@@ -57,10 +57,12 @@ def compress_images() -> None:
 
     skipped = done = failed = 0
     original_total = compressed_total = 0
+    total = len(sources)
+    PROGRESS_EVERY = max(1, total // 20)  # print every ~5%
 
-    print(f"Compressing {len(sources)} images → {IMAGES_OUT}")
+    print(f"Compressing {total} images → {IMAGES_OUT}")
 
-    for src in sources:
+    for i, src in enumerate(sources, start=1):
         dest = IMAGES_OUT / (src.stem + ".jpg")
         if dest.exists() and dest.stat().st_size > 0:
             skipped += 1
@@ -75,6 +77,10 @@ def compress_images() -> None:
             original_total   += src.stat().st_size
             compressed_total += dest.stat().st_size
             done += 1
+
+            if done % PROGRESS_EVERY == 0:
+                pct = i / total * 100
+                print(f"  [{i}/{total}] {pct:.0f}%  —  {compressed_total/1024/1024:.1f}MB written so far")
 
         except Exception as exc:
             print(f"  [error] {src.name}: {exc}")
@@ -110,10 +116,12 @@ def compress_audio() -> None:
 
     skipped = done = failed = 0
     original_total = compressed_total = 0
+    total = len(sources)
+    PROGRESS_EVERY = max(1, total // 20)  # print every ~5%
 
-    print(f"Compressing {len(sources)} audio files → {AUDIO_OUT}")
+    print(f"Compressing {total} audio files → {AUDIO_OUT}")
 
-    for src in sources:
+    for i, src in enumerate(sources, start=1):
         dest = AUDIO_OUT / src.name
         if dest.exists() and dest.stat().st_size > 0:
             skipped += 1
@@ -137,6 +145,10 @@ def compress_audio() -> None:
             original_total   += src.stat().st_size
             compressed_total += dest.stat().st_size
             done += 1
+
+            if done % PROGRESS_EVERY == 0:
+                pct = i / total * 100
+                print(f"  [{i}/{total}] {pct:.0f}%  —  {compressed_total/1024/1024:.1f}MB written so far")
 
         except Exception as exc:
             print(f"  [error] {src.name}: {exc}")
