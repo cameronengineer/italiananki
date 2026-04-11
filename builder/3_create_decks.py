@@ -37,9 +37,21 @@ def deck_id_for(stem: str) -> int:
     return (int(digest[:8], 16) % (1 << 30)) + (1 << 30)
 
 
+DECK_NAMES: dict[str, str] = {
+    "adjectives":               "Cam's Decks - Italian Adjectives",
+    "cafe":                     "Cam's Decks - Italian Cafe",
+    "nouns":                    "Cam's Decks - Italian Nouns",
+    "verbs_infinito":           "Cam's Decks - Italian Verbs Infinitive",
+    "verbs_presente":           "Cam's Decks - Italian Verbs Present",
+    "verbs_passatoprossimo":    "Cam's Decks - Italian Verbs Passato Prossimo",
+    "verbs_imperfetto":         "Cam's Decks - Italian Verbs Imperfetto",
+    "verbs_presenteprogressivo": "Cam's Decks - Italian Verbs Present Progressive",
+}
+
+
 def deck_name_for(stem: str) -> str:
-    """Convert a CSV stem to a human-readable deck name."""
-    return stem.replace("_", " ").title()
+    """Return the human-readable deck name for a CSV stem."""
+    return DECK_NAMES.get(stem, f"Cam's Decks - Italian {stem.replace('_', ' ').title()}")
 
 
 # ---------------------------------------------------------------------------
