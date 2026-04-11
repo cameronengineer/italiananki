@@ -5,7 +5,7 @@ These are Italian words whose spelling is similar enough to English that a
 learner can transfer existing knowledge (e.g. "favore" → "favor").
 
 Reads:  sources/8_transferable/4_clean.csv
-Writes: spreadsheets/transferable.csv
+Writes: spreadsheets/transferable.csv  (only when WRITE_OUTPUT = True)
 
 Card format (production — English front, Italian back):
   front_text    = English translation
@@ -32,6 +32,9 @@ INPUT_CSV = SOURCE_DIR / "4_clean.csv"
 OUTPUT_CSV = PROJECT_ROOT / "spreadsheets" / "transferable.csv"
 
 FIELDNAMES = ["front_text", "front_labels", "back_highlight", "back_text", "audio"]
+
+# Set to True to write spreadsheets/transferable.csv; False to dry-run only.
+WRITE_OUTPUT = False
 
 # Map raw Word_Type values → human-readable front_labels
 TYPE_LABEL: dict[str, str] = {
@@ -70,16 +73,18 @@ def main() -> None:
         print(f"Error: {INPUT_CSV} not found. Run 4_clean.py first.")
         return
 
-    OUTPUT_CSV.parent.mkdir(parents=True, exist_ok=True)
-
     rows_written = 0
-    with (
-        open(INPUT_CSV, newline="", encoding="utf-8") as in_f,
-        open(OUTPUT_CSV, "w", newline="", encoding="utf-8") as out_f,
-    ):
+    with open(INPUT_CSV, newline="", encoding="utf-8") as in_f:
         reader = csv.DictReader(in_f)
-        writer = csv.DictWriter(out_f, fieldnames=FIELDNAMES, quoting=csv.QUOTE_MINIMAL)
-        writer.writeheader()
+
+        if WRITE_OUTPUT:
+            OUTPUT_CSV.parent.mkdir(parents=True, exist_ok=True)
+            out_f = open(OUTPUT_CSV, "w", newline="", encoding="utf-8")
+            writer = csv.DictWriter(out_f, fieldnames=FIELDNAMES, quoting=csv.QUOTE_MINIMAL)
+            writer.writeheader()
+        else:
+            out_f = None
+            writer = None
 
         for row in reader:
             word = row["Word"].strip()
@@ -89,16 +94,23 @@ def main() -> None:
             if not word or not english:
                 continue
 
-            writer.writerow({
-                "front_text": english,
-                "front_labels": primary_label(word_type),
-                "back_highlight": word,
-                "back_text": "",
-                "audio": word.split("/")[0].strip(),
-            })
+            if writer:
+                writer.writerow({
+                    "front_text": english,
+                    "front_labels": primary_label(word_type),
+                    "back_highlight": word,
+                    "back_text": "",
+                    "audio": word.split("/")[0].strip(),
+                })
             rows_written += 1
 
-    print(f"Wrote {rows_written} rows → {OUTPUT_CSV}")
+        if out_f:
+            out_f.close()
+
+    if WRITE_OUTPUT:
+        print(f"Wrote {rows_written} rows → {OUTPUT_CSV}")
+    else:
+        print(f"Dry run: {rows_written} rows (WRITE_OUTPUT=False, nothing written)")
 
 
 if __name__ == "__main__":
