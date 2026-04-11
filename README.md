@@ -8,41 +8,41 @@ A collection of Italian language Anki decks built from frequency-ranked word lis
 
 | Deck | Notes | Audio | Images | AnkiWeb |
 |------|------:|:-----:|:------:|---------|
-| Aggettivi | 491 | ✓ | ✓ | [Download](https://ankiweb.net/shared/info/1038953141) |
-| Caffè | 184 | ✓ | ✓ | [Download](https://ankiweb.net/shared/info/872364471) |
-| Sostantivi | 1,000 | ✓ | ✓ | [Download](https://ankiweb.net/shared/info/750012174) |
-| Verbi Infinito | 400 | ✓ | ✓ | [Download](https://ankiweb.net/shared/info/1442694903) |
-| Verbi Presente | 1,800 | ✓ | ✓ | [Download](https://ankiweb.net/shared/info/269137193) |
-| Verbi Passato Prossimo | 1,800 | ✓ | ✓ | *coming soon* |
-| Verbi Imperfetto | 60 | ✓ | ✓ | *coming soon* |
-| Verbi Presente Progressivo | 1,800 | partial | ✓ | *coming soon* |
+| Italiano Aggettivi | 491 | ✓ | ✓ | [Download](https://ankiweb.net/shared/info/1038953141) |
+| Italiano Caffè | 184 | ✓ | ✓ | [Download](https://ankiweb.net/shared/info/872364471) |
+| Italiano Sostantivi | 1,000 | ✓ | ✓ | [Download](https://ankiweb.net/shared/info/750012174) |
+| Italiano Verbi Infinito | 400 | ✓ | ✓ | [Download](https://ankiweb.net/shared/info/1442694903) |
+| Italiano Verbi Presente | 1,800 | ✓ | ✓ | [Download](https://ankiweb.net/shared/info/269137193) |
+| Italiano Verbi Passato Prossimo | 1,800 | ✓ | ✓ | *coming soon* |
+| Italiano Verbi Imperfetto | 60 | ✓ | ✓ | *coming soon* |
+| Italiano Verbi Presente Progressivo | 1,800 | partial | ✓ | *coming soon* |
 
 ---
 
 ## Deck descriptions
 
-### Aggettivi
+### Italiano Aggettivi
 Top 491 Italian adjectives ranked by corpus frequency. Each card covers all four inflected forms of the adjective (masculine/feminine, singular/plural) shown together on the back — e.g. *nuovo / nuova / nuovi / nuove*.
 
-### Caffè
+### Italiano Caffè
 184 cards covering practical everyday Italian. Vocabulary and phrases for situations you'll encounter immediately: greetings, ordering at a bar or restaurant, shopping, asking for directions, and common social expressions.
 
-### Sostantivi
+### Italiano Sostantivi
 The top 1,000 Italian nouns ranked by corpus frequency, each paired with its definite article — e.g. *la parte*, *il tempo*. Covers the words you will encounter most often in everyday reading and conversation.
 
-### Verbi Infinito
+### Italiano Verbi Infinito
 The top 400 Italian verbs in infinitive form, ranked by frequency. A core reference deck — learn the base form and meaning of each verb before tackling the conjugation decks.
 
-### Verbi Presente
+### Italiano Verbi Presente
 The top 300 Italian verbs fully conjugated in the presente indicativo (simple present). 6 cards per verb, one for each subject pronoun: io, tu, lui/lei, noi, voi, loro. 1,800 cards total.
 
-### Verbi Passato Prossimo
+### Italiano Verbi Passato Prossimo
 The top 300 Italian verbs conjugated in the passato prossimo (completed past, equivalent to "I have eaten" / "I ate"). 6 cards per verb, 1,800 cards total.
 
-### Verbi Imperfetto
+### Italiano Verbi Imperfetto
 Italian verbs conjugated in the imperfetto (continuous or habitual past, equivalent to "I was eating" / "I used to eat"). 6 cards per verb. This deck is being expanded — more verbs will be added in future updates.
 
-### Verbi Presente Progressivo
+### Italiano Verbi Presente Progressivo
 The top 300 Italian verbs conjugated in the presente progressivo (e.g. *sto mangiando* — "I am eating"). 6 cards per verb, 1,800 cards total. Audio generation for this deck is ongoing and will be completed in a future update.
 
 ---
