@@ -3,7 +3,7 @@
 """
 Generate one Anki .apkg per spreadsheet CSV.
 
-Reads:   spreadsheets/*.csv     (columns: front_text, front_labels, back_highlight, back_text, audio, image)
+Reads:   spreadsheets/*.csv     (columns: front_text, front_labels, back_highlight, back_text, audio)
 Reads:   media/audio/*.mp3      (filenames = md5(audio_text).mp3, produced by builder/1_generate_audio.py)
 Reads:   media/images/*.png     (filenames = base64(image_key).png, produced by builder/2_generate_images.py)
 Writes:  output/<stem>.apkg     (one package per source CSV)
@@ -232,7 +232,7 @@ def build_deck(csv_path: Path, deck_name: str, deck_id: int, model: genanki.Mode
             back_highlight = row.get("back_highlight", "").strip()
             back_text = row.get("back_text", "").strip()
             audio_text = row.get("audio", "").strip()
-            image_prompt = row.get("image", "").strip()
+            image_key = back_text if back_text else back_highlight
 
             if not front_text:
                 continue
@@ -251,8 +251,8 @@ def build_deck(csv_path: Path, deck_name: str, deck_id: int, model: genanki.Mode
                 audio_field = ""
 
             # Resolve image
-            if image_prompt:
-                fname = image_filename(image_prompt)
+            if image_key:
+                fname = image_filename(image_key)
                 img_path = IMAGE_DIR / fname
                 if img_path.exists() and img_path.stat().st_size > 0:
                     image_field = f'<img src="{fname}">'

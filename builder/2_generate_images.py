@@ -70,7 +70,7 @@ def load_api_key(path: Path) -> str:
 
 
 def image_filename(key: str) -> str:
-    """Return the MD5 hash of the back_highlight key as a PNG filename."""
+    """Return the MD5 hash of the image key as a PNG filename."""
     digest = hashlib.md5(key.encode("utf-8")).hexdigest()
     return f"{digest}.png"
 
@@ -81,10 +81,12 @@ def collect_entries(spreadsheets_dir: Path, only: list[str] | None = None) -> li
     `back_highlight`. Returns a list of dicts with keys:
         source, front_text, front_labels, back_highlight, back_text, audio
 
-    Deduplicates by back_highlight (first seen wins).
+    Deduplicates by image key: `back_text` when non-empty (verb infinitive),
+    otherwise `back_highlight`. This collapses all conjugated forms of the same
+    verb down to a single image keyed on the infinitive.
     Skips CSVs that have no `back_highlight` column.
     """
-    seen: dict[str, dict] = {}  # back_highlight -> entry dict
+    seen: dict[str, dict] = {}  # image_key -> entry dict
 
     for csv_path in sorted(spreadsheets_dir.glob("*.csv")):
         if only and csv_path.stem not in only:
@@ -96,14 +98,17 @@ def collect_entries(spreadsheets_dir: Path, only: list[str] | None = None) -> li
                 print(f"  [skip] {csv_path.name} — no 'back_highlight' column")
                 continue
             for row in reader:
-                key = row.get("back_highlight", "").strip()
+                back_highlight = row.get("back_highlight", "").strip()
+                back_text      = row.get("back_text", "").strip()
+                key = back_text if back_text else back_highlight
                 if key and key not in seen:
                     seen[key] = {
                         "source":         csv_path.name,
+                        "image_key":      key,
                         "front_text":     row.get("front_text", "").strip(),
                         "front_labels":   row.get("front_labels", "").strip(),
-                        "back_highlight": key,
-                        "back_text":      row.get("back_text", "").strip(),
+                        "back_highlight": back_highlight,
+                        "back_text":      back_text,
                         "audio":          row.get("audio", "").strip(),
                     }
 
@@ -304,8 +309,8 @@ def main() -> None:
     to_generate = [
         entry
         for entry in entries
-        if not (OUTPUT_DIR / image_filename(entry["back_highlight"])).exists()
-        or (OUTPUT_DIR / image_filename(entry["back_highlight"])).stat().st_size == 0
+        if not (OUTPUT_DIR / image_filename(entry["image_key"])).exists()
+        or (OUTPUT_DIR / image_filename(entry["image_key"])).stat().st_size == 0
     ]
 
     if LIMIT is not None:
@@ -315,7 +320,7 @@ def main() -> None:
     total_to_generate = len(to_generate)
     skipped = total_entries - total_to_generate
 
-    print(f"Found {total_entries} unique back_highlight value(s). {skipped} already exist, {total_to_generate} to generate.\n")
+    print(f"Found {total_entries} unique image key(s). {skipped} already exist, {total_to_generate} to generate.\n")
     print("=" * 80)
 
     if total_to_generate == 0:
@@ -336,9 +341,9 @@ def main() -> None:
                 idx,
                 total_to_generate,
                 entry,
-                OUTPUT_DIR / image_filename(entry["back_highlight"]),
+                OUTPUT_DIR / image_filename(entry["image_key"]),
                 print_lock,
-            ): entry["back_highlight"]
+            ): entry["image_key"]
             for idx, entry in enumerate(to_generate, start=1)
         }
 
