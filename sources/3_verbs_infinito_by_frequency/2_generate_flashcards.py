@@ -22,6 +22,8 @@ OUTPUT_CSV = PROJECT_ROOT / "spreadsheets" / "verbs_infinito.csv"
 
 FIELDNAMES = ["front_text", "front_labels", "back_highlight", "back_text", "audio"]
 
+LIMIT = 400
+
 
 def main() -> None:
     OUTPUT_CSV.parent.mkdir(parents=True, exist_ok=True)
@@ -36,6 +38,8 @@ def main() -> None:
         writer.writeheader()
 
         for row in reader:
+            if rows_written >= LIMIT:
+                break
             italian = row["italian"].strip()
             english = row["english"].strip()
             if not italian or not english:

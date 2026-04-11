@@ -27,6 +27,7 @@ FIELDNAMES = ["front_text", "front_labels", "back_highlight", "back_text", "audi
 
 PRONOUNS = ["io", "tu", "lui/lei", "noi", "voi", "loro"]
 TENSE    = "present progressive"
+VERB_LIMIT = 400
 
 
 def main() -> None:
@@ -41,7 +42,10 @@ def main() -> None:
         writer = csv.DictWriter(out_f, fieldnames=FIELDNAMES, quoting=csv.QUOTE_MINIMAL)
         writer.writeheader()
 
+        verbs_written = 0
         for row in reader:
+            if verbs_written >= VERB_LIMIT:
+                break
             italian = row["italian"].strip()
             english_infinitive = row["english"].strip()
             for pronoun in PRONOUNS:
@@ -58,6 +62,7 @@ def main() -> None:
                     "audio":          conjugated.split("/")[0].strip(),
                 })
                 rows_written += 1
+            verbs_written += 1
 
     print(f"Wrote {rows_written} rows → {OUTPUT_CSV}")
 
