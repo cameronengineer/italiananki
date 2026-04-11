@@ -7,33 +7,59 @@ A collection of Italian language Anki decks built from frequency-ranked word lis
 ## Decks
 
 | Deck | Notes | Audio | Images | AnkiWeb |
-|------|------:|------:|-------:|---------|
-| Adjectives | 491 | ✓ | ✓ | [Download](https://ankiweb.net/shared/info/1038953141) |
-| Cafe | 184 | ✓ | ✓ | [Download](https://ankiweb.net/shared/info/872364471) |
-| Nouns | 1,000 | ✓ | ✓ | [Download](https://ankiweb.net/shared/info/750012174) |
-| Verbs — Infinito | 400 | ✓ | partial | [Download](https://ankiweb.net/shared/info/1442694903) |
-| Verbs — Presente | 2,400 | ✓ | partial | [Download](https://ankiweb.net/shared/info/269137193) |
-| Verbs — Passato Prossimo | 2,400 | partial | partial | *coming soon* |
-| Verbs — Imperfetto | 60 | ✓ | partial | *coming soon* |
-| Verbs — Presente Progressivo | 2,400 | partial | partial | *coming soon* |
+|------|------:|:-----:|:------:|---------|
+| Aggettivi | 491 | ✓ | ✓ | [Download](https://ankiweb.net/shared/info/1038953141) |
+| Caffè | 184 | ✓ | ✓ | [Download](https://ankiweb.net/shared/info/872364471) |
+| Sostantivi | 1,000 | ✓ | ✓ | [Download](https://ankiweb.net/shared/info/750012174) |
+| Verbi Infinito | 400 | ✓ | ✓ | [Download](https://ankiweb.net/shared/info/1442694903) |
+| Verbi Presente | 1,800 | ✓ | ✓ | [Download](https://ankiweb.net/shared/info/269137193) |
+| Verbi Passato Prossimo | 1,800 | ✓ | ✓ | *coming soon* |
+| Verbi Imperfetto | 60 | ✓ | ✓ | *coming soon* |
+| Verbi Presente Progressivo | 1,800 | partial | ✓ | *coming soon* |
 
-Verb conjugation decks (Presente, Passato Prossimo, Imperfetto, Presente Progressivo) contain 6 cards per verb — one for each subject pronoun (io, tu, lui/lei, noi, voi, loro). All conjugation decks share the same set of 400 infinitive-based images — so the image for `essere`, for example, is the same across every tense.
+---
 
-Audio and image generation is ongoing — decks marked *partial* will be updated as generation completes.
+## Deck descriptions
+
+### Aggettivi
+Top 491 Italian adjectives ranked by corpus frequency. Each card covers all four inflected forms of the adjective (masculine/feminine, singular/plural) shown together on the back — e.g. *nuovo / nuova / nuovi / nuove*.
+
+### Caffè
+184 cards covering practical everyday Italian. Vocabulary and phrases for situations you'll encounter immediately: greetings, ordering at a bar or restaurant, shopping, asking for directions, and common social expressions.
+
+### Sostantivi
+The top 1,000 Italian nouns ranked by corpus frequency, each paired with its definite article — e.g. *la parte*, *il tempo*. Covers the words you will encounter most often in everyday reading and conversation.
+
+### Verbi Infinito
+The top 400 Italian verbs in infinitive form, ranked by frequency. A core reference deck — learn the base form and meaning of each verb before tackling the conjugation decks.
+
+### Verbi Presente
+The top 300 Italian verbs fully conjugated in the presente indicativo (simple present). 6 cards per verb, one for each subject pronoun: io, tu, lui/lei, noi, voi, loro. 1,800 cards total.
+
+### Verbi Passato Prossimo
+The top 300 Italian verbs conjugated in the passato prossimo (completed past, equivalent to "I have eaten" / "I ate"). 6 cards per verb, 1,800 cards total.
+
+### Verbi Imperfetto
+Italian verbs conjugated in the imperfetto (continuous or habitual past, equivalent to "I was eating" / "I used to eat"). 6 cards per verb. This deck is being expanded — more verbs will be added in future updates.
+
+### Verbi Presente Progressivo
+The top 300 Italian verbs conjugated in the presente progressivo (e.g. *sto mangiando* — "I am eating"). 6 cards per verb, 1,800 cards total. Audio generation for this deck is ongoing and will be completed in a future update.
 
 ---
 
 ## Card format
 
-Cards are production cards: English on the front, Italian on the back.
+All cards are production cards: English on the front, Italian on the back.
 
-**Vocabulary cards** (Nouns, Adjectives, Cafe, Infinito):
-- Front: English meaning + word type label (e.g. `noun`, `verb`, `adjective`)
-- Back: Italian word or phrase with audio
+**Vocabulary cards** (Sostantivi, Aggettivi, Caffè, Verbi Infinito):
+- Front: English meaning + word type label (e.g. `noun`, `adjective`, `verb`)
+- Back: Italian word or phrase with audio and image
 
-**Conjugation cards** (Presente, Passato Prossimo, Imperfetto, Presente Progressivo):
-- Front: English conjugated form + label (e.g. `tense: present | subject: io`)
-- Back: Italian conjugated form with audio, Italian infinitive shown below
+**Conjugation cards** (Verbi Presente, Passato Prossimo, Imperfetto, Presente Progressivo):
+- Front: English conjugated form + context label (e.g. `tense: present | subject: io`)
+- Back: Italian conjugated form with audio, Italian infinitive shown below, and image
+
+All conjugation decks share the same set of verb images — the image for *essere*, for example, is the same across every tense.
 
 ---
 
@@ -42,7 +68,7 @@ Cards are production cards: English on the front, Italian on the back.
 1. Click **Download** next to the deck you want
 2. Open Anki desktop
 3. Go to **File → Import** and select the downloaded `.apkg` file
-4. The deck appears in your list ready to study
+4. The deck will appear under **Cam's Decks** ready to study
 
 After importing on desktop you can sync to AnkiWeb or AnkiMobile.
 
