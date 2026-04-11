@@ -8,14 +8,14 @@ A collection of Italian language Anki decks built from frequency-ranked word lis
 
 | Deck | Notes | Audio | Images | AnkiWeb |
 |------|------:|:-----:|:------:|---------|
-| Italiano Aggettivi | 491 | ✓ | ✓ | [Download](https://ankiweb.net/shared/info/1038953141) |
-| Italiano Caffè | 184 | ✓ | ✓ | [Download](https://ankiweb.net/shared/info/872364471) |
-| Italiano Sostantivi | 1,000 | ✓ | ✓ | [Download](https://ankiweb.net/shared/info/750012174) |
-| Italiano Verbi Infinito | 400 | ✓ | ✓ | [Download](https://ankiweb.net/shared/info/1442694903) |
-| Italiano Verbi Presente | 2,400 | ✓ | ✓ | [Download](https://ankiweb.net/shared/info/269137193) |
-| Italiano Verbi Passato Prossimo | 2,400 | ✓ | ✓ | *coming soon* |
-| Italiano Verbi Imperfetto | 60 | ✓ | ✓ | *coming soon* |
-| Italiano Verbi Presente Progressivo | 2,400 | partial | ✓ | *coming soon* |
+| Italiano Aggettivi | 491 | ✓ | ✓ | [Download](https://ankiweb.net/shared/info/1165315849) |
+| Italiano Caffè | 184 | ✓ | ✓ | [Download](https://ankiweb.net/shared/info/2027629040) |
+| Italiano Sostantivi | 1,000 | ✓ | ✓ | [Download](https://ankiweb.net/shared/info/472694903) |
+| Italiano Verbi Infinito | 400 | ✓ | ✓ | [Download](https://ankiweb.net/shared/info/1261279002) |
+| Italiano Verbi Presente | 2,400 | ✓ | ✓ | [Download](https://ankiweb.net/shared/info/1681943579) |
+| Italiano Verbi Passato Prossimo | 2,400 | ✓ | ✓ | [Download](https://ankiweb.net/shared/info/1602921365) |
+| Italiano Verbi Imperfetto | 60 | ✓ | ✓ | [Download](https://ankiweb.net/shared/info/1126989263) |
+| Italiano Verbi Presente Progressivo | 2,400 | partial | ✓ | [Download](https://ankiweb.net/shared/info/1923480684) |
 
 ---
 
@@ -76,4 +76,4 @@ After importing on desktop you can sync to AnkiWeb or AnkiMobile.
 
 ## Issues and contributions
 
-Found a wrong translation, conjugation error, or bad audio? Open an issue or submit a pull request on [GitHub](https://github.com/cameronengineer/italiananki). Contributions to improve deck quality are welcome.
+Found a wrong translation, conjugation error, or bad audio? Open an issue or submit a pull request. Contributions to improve deck quality are welcome.
