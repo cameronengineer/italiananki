@@ -40,14 +40,14 @@ def deck_id_for(stem: str) -> int:
 
 
 DECK_NAMES: dict[str, str] = {
-    "adjectives":                "Cam's Decks - Aggettivi",
-    "cafe":                      "Cam's Decks - Caffè",
-    "nouns":                     "Cam's Decks - Sostantivi",
-    "verbs_infinito":            "Cam's Decks - Verbi Infinito",
-    "verbs_presente":            "Cam's Decks - Verbi Presente",
-    "verbs_passatoprossimo":     "Cam's Decks - Verbi Passato Prossimo",
-    "verbs_imperfetto":          "Cam's Decks - Verbi Imperfetto",
-    "verbs_presenteprogressivo": "Cam's Decks - Verbi Presente Progressivo",
+    "adjectives":                "Cam's Decks - Italiano Aggettivi",
+    "cafe":                      "Cam's Decks - Italiano Caffè",
+    "nouns":                     "Cam's Decks - Italiano Sostantivi",
+    "verbs_infinito":            "Cam's Decks - Italiano Verbi Infinito",
+    "verbs_presente":            "Cam's Decks - Italiano Verbi Presente",
+    "verbs_passatoprossimo":     "Cam's Decks - Italiano Verbi Passato Prossimo",
+    "verbs_imperfetto":          "Cam's Decks - Italiano Verbi Imperfetto",
+    "verbs_presenteprogressivo": "Cam's Decks - Italiano Verbi Presente Progressivo",
 }
 
 
