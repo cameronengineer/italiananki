@@ -9,8 +9,7 @@ Card format (production — English front, Italian back):
   front_labels  = "noun"
   back_highlight = Italian noun with definite article (e.g. "la metro")
   back_text     = ""
-  audio         = Italian noun with definite article
-  image         = prompt for an illustration of the English word (one per row)
+  audio         = base form before any "/" so TTS reads cleanly
 """
 
 import csv
@@ -21,7 +20,7 @@ PROJECT_ROOT = pathlib.Path(__file__).resolve().parents[2]
 INPUT_CSV = pathlib.Path(__file__).resolve().parent / "nouns_translated.csv"
 OUTPUT_CSV = PROJECT_ROOT / "spreadsheets" / "nouns.csv"
 
-FIELDNAMES = ["front_text", "front_labels", "back_highlight", "back_text", "audio", "image"]
+FIELDNAMES = ["front_text", "front_labels", "back_highlight", "back_text", "audio"]
 
 
 def main() -> None:
@@ -48,8 +47,7 @@ def main() -> None:
                     "front_labels": "noun",
                     "back_highlight": italian,
                     "back_text": "",
-                    "audio": italian,
-                    "image": f"A simple illustration of {english}",
+                    "audio": italian.split("/")[0].strip(),
                 }
             )
             rows_written += 1

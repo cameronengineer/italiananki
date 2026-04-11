@@ -1,14 +1,19 @@
 # Requirements: requests
 
 """
-Generate images for flashcards using OpenRouter (google/gemini-2.5-flash-image).
+Generate images for flashcards using OpenRouter.
 
-Reads:   spreadsheets/*.csv     (must have an `image` column)
+Two-phase process per image:
+  1. Text AI (google/gemini-3.1-flash-lite-preview) reads the full flashcard row
+     and writes a precise image generation prompt that reflects the Italian meaning,
+     avoiding ambiguous English interpretations.
+  2. Image AI (black-forest-labs/flux.2-klein-4b) generates the image from that prompt.
+
+Reads:   spreadsheets/*.csv     (must have a `back_highlight` column)
 Writes:  media/images/<md5>.png
 
-The `image` column value is used as both the deduplication key and the basis
-for the filename (MD5-hashed). Each unique `image` value produces exactly one
-PNG file, so rows that share the same image value all map to the same file.
+The `back_highlight` value is MD5-hashed to produce the output filename.
+Each unique `back_highlight` value produces exactly one PNG file.
 
 Skips entries where the output file already exists and is non-empty (resume).
 
@@ -22,6 +27,7 @@ import argparse
 import base64
 import csv
 import hashlib
+import json
 import threading
 import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
@@ -42,11 +48,13 @@ OUTPUT_DIR = PROJECT_ROOT / "media" / "images"
 # ---------------------------------------------------------------------------
 # Config
 # ---------------------------------------------------------------------------
-MODEL = "google/gemini-2.5-flash-image"
+TEXT_MODEL  = "google/gemini-3.1-flash-lite-preview"   # cheap text AI for prompt generation
+IMAGE_MODEL = "black-forest-labs/flux.2-klein-4b"      # $0.014/image — 3× cheaper than Gemini
+
 LIMIT = None        # Set to an integer to cap the run (useful for testing)
 MAX_RETRIES = 2
 RETRY_SLEEP = 5.0
-WORKERS = 10        # Number of parallel requests
+WORKERS = 10        # Number of parallel workers
 
 
 # ---------------------------------------------------------------------------
@@ -62,56 +70,121 @@ def load_api_key(path: Path) -> str:
 
 
 def image_filename(key: str) -> str:
-    """Return the MD5 hash of the key as a PNG filename."""
+    """Return the MD5 hash of the back_highlight key as a PNG filename."""
     digest = hashlib.md5(key.encode("utf-8")).hexdigest()
     return f"{digest}.png"
 
 
-def build_prompt(image_key: str) -> str:
+def collect_entries(spreadsheets_dir: Path, only: list[str] | None = None) -> list[dict]:
     """
-    Build the detailed image generation prompt from the image key.
-    The key is a short English concept string (e.g. 'part', 'the action of be').
-    """
-    return (
-        f"A flat design corporate style icon stock illustration representing "
-        f"the concept of '{image_key}'. "
-        f"The image should be simple, clear, and suitable for a language learner "
-        f"to associate with the word or phrase. "
-        f"STRICTLY NO TEXT. Do not include any words, letters, numbers, labels, "
-        f"or typography of any kind. The image must be 100% purely visual icon only."
-    )
+    Walk CSVs in spreadsheets_dir and collect unique flashcard rows keyed by
+    `back_highlight`. Returns a list of dicts with keys:
+        source, front_text, front_labels, back_highlight, back_text, audio
 
-
-def collect_entries(spreadsheets_dir: Path, only: list[str] | None = None) -> list[tuple[str, str]]:
+    Deduplicates by back_highlight (first seen wins).
+    Skips CSVs that have no `back_highlight` column.
     """
-    Walk CSVs in spreadsheets_dir and collect unique (source_label, image_key)
-    pairs from the `image` column. Deduplicates by image key.
-
-    If `only` is given, restrict to those stems (e.g. ["cafe", "nouns"]).
-    Returns list of (source_label, image_key).
-    """
-    seen: dict[str, str] = {}  # image_key -> first source label
+    seen: dict[str, dict] = {}  # back_highlight -> entry dict
 
     for csv_path in sorted(spreadsheets_dir.glob("*.csv")):
         if only and csv_path.stem not in only:
             continue
         with open(csv_path, encoding="utf-8", newline="") as f:
             reader = csv.DictReader(f)
-            if "image" not in (reader.fieldnames or []):
-                print(f"  [skip] {csv_path.name} — no 'image' column")
+            fieldnames = reader.fieldnames or []
+            if "back_highlight" not in fieldnames:
+                print(f"  [skip] {csv_path.name} — no 'back_highlight' column")
                 continue
             for row in reader:
-                key = row.get("image", "").strip()
+                key = row.get("back_highlight", "").strip()
                 if key and key not in seen:
-                    seen[key] = csv_path.name
+                    seen[key] = {
+                        "source":         csv_path.name,
+                        "front_text":     row.get("front_text", "").strip(),
+                        "front_labels":   row.get("front_labels", "").strip(),
+                        "back_highlight": key,
+                        "back_text":      row.get("back_text", "").strip(),
+                        "audio":          row.get("audio", "").strip(),
+                    }
 
-    return [(label, key) for key, label in seen.items()]
+    return list(seen.values())
 
 
-def generate_image(api_key: str, prompt: str, output_path: Path) -> bool:
+def describe_image(api_key: str, entry: dict) -> str | None:
     """
-    Call OpenRouter with an image-generation model and write PNG to output_path.
-    Returns True on success.
+    Call the text AI with the full flashcard row to produce a specific,
+    unambiguous image generation prompt tailored to the Italian meaning.
+    Returns the prompt string, or None on failure.
+    """
+    front_text   = entry["front_text"]
+    front_labels = entry["front_labels"]
+    back_highlight = entry["back_highlight"]
+    back_text    = entry["back_text"]
+
+    infinitive_line = f"\n- Italian infinitive: {back_text}" if back_text else ""
+
+    user_content = (
+        f"- English: {front_text}\n"
+        f"- Type / context: {front_labels}\n"
+        f"- Italian: {back_highlight}"
+        f"{infinitive_line}\n\n"
+        f"Write the image generation prompt."
+    )
+
+    system_content = (
+        "You generate image prompts for Italian language flashcard illustrations. "
+        "Given a flashcard's data, write a single specific image generation prompt "
+        "(2–3 sentences) for a flat design, minimalist icon-style illustration. "
+        "The Italian word/phrase takes precedence over the English when the English "
+        "is ambiguous — the image must accurately represent the Italian meaning. "
+        "The image must be simple, clear, and suitable for a language learner. "
+        "STRICTLY NO TEXT, letters, numbers, or labels in the image. "
+        "Respond with only the image prompt, nothing else."
+    )
+
+    headers = {
+        "Authorization": f"Bearer {api_key}",
+        "Content-Type": "application/json",
+    }
+    payload = {
+        "model": TEXT_MODEL,
+        "messages": [
+            {"role": "system", "content": system_content},
+            {"role": "user",   "content": user_content},
+        ],
+    }
+
+    for attempt in range(1, MAX_RETRIES + 2):
+        try:
+            response = requests.post(
+                "https://openrouter.ai/api/v1/chat/completions",
+                headers=headers,
+                json=payload,
+                timeout=60,
+            )
+            response.raise_for_status()
+            result = response.json()
+            description = result["choices"][0]["message"]["content"].strip()
+            if description:
+                return description
+            print(f"    [warn] Empty description from text AI for: {back_highlight}")
+            return None
+
+        except requests.HTTPError as exc:
+            print(f"    [error] Text AI attempt {attempt}: HTTP {exc.response.status_code} — {exc}")
+        except Exception as exc:
+            print(f"    [error] Text AI attempt {attempt}: {exc}")
+
+        if attempt <= MAX_RETRIES:
+            time.sleep(RETRY_SLEEP)
+
+    return None
+
+
+def generate_image(api_key: str, description: str, output_path: Path) -> bool:
+    """
+    Call OpenRouter with FLUX.2 Klein to generate an image from `description`
+    and write the PNG to output_path. Returns True on success.
     """
     headers = {
         "Authorization": f"Bearer {api_key}",
@@ -119,9 +192,9 @@ def generate_image(api_key: str, prompt: str, output_path: Path) -> bool:
         "X-Title": "Italian Flashcards",
     }
     payload = {
-        "model": MODEL,
-        "messages": [{"role": "user", "content": prompt}],
-        "modalities": ["image", "text"],
+        "model": IMAGE_MODEL,
+        "messages": [{"role": "user", "content": description}],
+        "modalities": ["image"],
     }
 
     for attempt in range(1, MAX_RETRIES + 2):
@@ -156,9 +229,9 @@ def generate_image(api_key: str, prompt: str, output_path: Path) -> bool:
             return True
 
         except requests.HTTPError as exc:
-            print(f"    [error] Attempt {attempt}: HTTP {exc.response.status_code} — {exc}")
+            print(f"    [error] Image gen attempt {attempt}: HTTP {exc.response.status_code} — {exc}")
         except Exception as exc:
-            print(f"    [error] Attempt {attempt}: {exc}")
+            print(f"    [error] Image gen attempt {attempt}: {exc}")
 
         if attempt <= MAX_RETRIES:
             print(f"    Retrying in {RETRY_SLEEP}s...")
@@ -171,17 +244,25 @@ def run_task(
     api_key: str,
     idx: int,
     total: int,
-    source: str,
-    key: str,
+    entry: dict,
     output_path: Path,
     print_lock: threading.Lock,
 ) -> bool:
-    """Worker task: generate one image and print progress thread-safely."""
-    prompt = build_prompt(key)
-    with print_lock:
-        print(f"[{idx}/{total}] ({source}) \"{key}\"")
+    """Worker task: generate image description then the image itself."""
+    key = entry["back_highlight"]
 
-    success = generate_image(api_key, prompt, output_path)
+    with print_lock:
+        print(f"[{idx}/{total}] ({entry['source']}) \"{key}\"")
+
+    # Phase 1: text AI generates a precise image description
+    description = describe_image(api_key, entry)
+    if not description:
+        with print_lock:
+            print(f"  [fail] [{idx}/{total}] could not generate description for: {key}")
+        return False
+
+    # Phase 2: image AI generates the image
+    success = generate_image(api_key, description, output_path)
 
     with print_lock:
         if success:
@@ -216,15 +297,15 @@ def main() -> None:
     entries = collect_entries(SPREADSHEETS_DIR, only=only)
 
     if not entries:
-        print("No image keys found. Nothing to do.")
+        print("No entries found. Nothing to do.")
         return
 
     # Filter to only entries that need generating
     to_generate = [
-        (label, key)
-        for label, key in entries
-        if not (OUTPUT_DIR / image_filename(key)).exists()
-        or (OUTPUT_DIR / image_filename(key)).stat().st_size == 0
+        entry
+        for entry in entries
+        if not (OUTPUT_DIR / image_filename(entry["back_highlight"])).exists()
+        or (OUTPUT_DIR / image_filename(entry["back_highlight"])).stat().st_size == 0
     ]
 
     if LIMIT is not None:
@@ -234,7 +315,7 @@ def main() -> None:
     total_to_generate = len(to_generate)
     skipped = total_entries - total_to_generate
 
-    print(f"Found {total_entries} unique image key(s). {skipped} already exist, {total_to_generate} to generate.\n")
+    print(f"Found {total_entries} unique back_highlight value(s). {skipped} already exist, {total_to_generate} to generate.\n")
     print("=" * 80)
 
     if total_to_generate == 0:
@@ -254,12 +335,11 @@ def main() -> None:
                 api_key,
                 idx,
                 total_to_generate,
-                source,
-                key,
-                OUTPUT_DIR / image_filename(key),
+                entry,
+                OUTPUT_DIR / image_filename(entry["back_highlight"]),
                 print_lock,
-            ): key
-            for idx, (source, key) in enumerate(to_generate, start=1)
+            ): entry["back_highlight"]
+            for idx, entry in enumerate(to_generate, start=1)
         }
 
         for future in as_completed(futures):

@@ -13,7 +13,6 @@ Card format (production — English front, Italian back):
   back_highlight = full progressive form (e.g. "sto imparando")
   back_text      = Italian infinitive (e.g. "imparare")
   audio          = full progressive form
-  image          = prompt derived from the infinitive — shared across all 6 pronoun rows
 """
 
 import csv
@@ -24,7 +23,7 @@ PROJECT_ROOT = pathlib.Path(__file__).resolve().parents[2]
 INPUT_CSV  = pathlib.Path(__file__).resolve().parent / "verbs_conjugated.csv"
 OUTPUT_CSV = PROJECT_ROOT / "spreadsheets" / "verbs_presenteprogressivo.csv"
 
-FIELDNAMES = ["front_text", "front_labels", "back_highlight", "back_text", "audio", "image"]
+FIELDNAMES = ["front_text", "front_labels", "back_highlight", "back_text", "audio"]
 
 PRONOUNS = ["io", "tu", "lui/lei", "noi", "voi", "loro"]
 TENSE    = "present progressive"
@@ -45,9 +44,6 @@ def main() -> None:
         for row in reader:
             italian = row["italian"].strip()
             english_infinitive = row["english"].strip()
-            action = english_infinitive[3:] if english_infinitive.lower().startswith("to ") else english_infinitive
-            image_prompt = f"A simple illustration of the action of {action}"
-
             for pronoun in PRONOUNS:
                 conjugated = row[pronoun].strip()
                 if not conjugated:
@@ -59,8 +55,7 @@ def main() -> None:
                     "front_labels":   f"tense: {TENSE} | subject: {pronoun}",
                     "back_highlight": conjugated,
                     "back_text":      italian,
-                    "audio":          conjugated,
-                    "image":          image_prompt,
+                    "audio":          conjugated.split("/")[0].strip(),
                 })
                 rows_written += 1
 

@@ -13,7 +13,6 @@ Card format (production — English front, Italian back):
   back_highlight = Italian word (surface form from the frequency list)
   back_text     = ""
   audio         = Italian word
-  image         = prompt for an illustration of the English word (one per row)
 
 Usage (from project root, with .venv activated):
     python sources/8_transferable/scripts/5_generate_flashcards.py
@@ -32,7 +31,7 @@ PROJECT_ROOT = SCRIPT_DIR.parents[2]   # project root
 INPUT_CSV = SOURCE_DIR / "4_clean.csv"
 OUTPUT_CSV = PROJECT_ROOT / "spreadsheets" / "transferable.csv"
 
-FIELDNAMES = ["front_text", "front_labels", "back_highlight", "back_text", "audio", "image"]
+FIELDNAMES = ["front_text", "front_labels", "back_highlight", "back_text", "audio"]
 
 # Map raw Word_Type values → human-readable front_labels
 TYPE_LABEL: dict[str, str] = {
@@ -95,8 +94,7 @@ def main() -> None:
                 "front_labels": primary_label(word_type),
                 "back_highlight": word,
                 "back_text": "",
-                "audio": word,
-                "image": f"A simple illustration of {english}",
+                "audio": word.split("/")[0].strip(),
             })
             rows_written += 1
 
