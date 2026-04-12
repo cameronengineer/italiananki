@@ -6,6 +6,8 @@ A collection of Italian language Anki decks built from frequency-ranked word lis
 
 ## Decks
 
+[View all decks on AnkiWeb](https://ankiweb.net/shared/by-author/1673740821)
+
 | Deck | Notes | Audio | Images | AnkiWeb |
 |------|------:|:-----:|:------:|---------|
 | Italiano Fluent Forever 625 Words | 629 | ✓ | ✓ | [Download](https://ankiweb.net/shared/info/91296812) |
