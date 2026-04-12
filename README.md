@@ -17,7 +17,7 @@ A collection of Italian language Anki decks built from frequency-ranked word lis
 | Italiano Verbi Infinito | 400 | ✓ | ✓ | [Download](https://ankiweb.net/shared/info/1261279002) |
 | Italiano Verbi Passato Prossimo | 2,400 | ✓ | ✓ | [Download](https://ankiweb.net/shared/info/1602921365) |
 | Italiano Verbi Presente | 2,400 | ✓ | ✓ | [Download](https://ankiweb.net/shared/info/1681943579) |
-| Italiano Verbi Presente Progressivo | 2,400 | partial | ✓ | [Download](https://ankiweb.net/shared/info/1923480684) |
+| Italiano Verbi Presente Progressivo | 2,400 | ✓ | ✓ | [Download](https://ankiweb.net/shared/info/1923480684) |
 
 ---
 
@@ -51,7 +51,7 @@ The top 400 Italian verbs conjugated in the passato prossimo (completed past, eq
 Italian verbs conjugated in the imperfetto (continuous or habitual past, equivalent to "I was eating" / "I used to eat"). 6 cards per verb. This deck is being expanded — more verbs will be added in future updates.
 
 ### Italiano Verbi Presente Progressivo
-The top 400 Italian verbs conjugated in the presente progressivo (e.g. *sto mangiando* — "I am eating"). 6 cards per verb, 2,400 cards total. Audio generation for this deck is ongoing and will be completed in a future update.
+The top 400 Italian verbs conjugated in the presente progressivo (e.g. *sto mangiando* — "I am eating"). 6 cards per verb, 2,400 cards total.
 
 ---
 
