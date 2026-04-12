@@ -8,10 +8,10 @@ A collection of Italian language Anki decks built from frequency-ranked word lis
 
 | Deck | Notes | Audio | Images | AnkiWeb |
 |------|------:|:-----:|:------:|---------|
-| Italiano Fluent Forever 625 Words | 629 | ✓ | ✓ | — |
+| Italiano Fluent Forever 625 Words | 629 | ✓ | ✓ | [Download](https://ankiweb.net/shared/info/91296812) |
 | Italiano Aggettivi | 491 | ✓ | ✓ | [Download](https://ankiweb.net/shared/info/1165315849) |
 | Italiano Caffè | 184 | ✓ | ✓ | [Download](https://ankiweb.net/shared/info/2027629040) |
-| Italian Numbers | 400 | ✓ | N/A | — |
+| Italian Numbers | 400 | ✓ | N/A | [Download](https://ankiweb.net/shared/info/1673740821) |
 | Italiano Sostantivi | 1,000 | ✓ | ✓ | [Download](https://ankiweb.net/shared/info/472694903) |
 | Italiano Verbi Imperfetto | 60 | ✓ | ✓ | [Download](https://ankiweb.net/shared/info/1126989263) |
 | Italiano Verbi Infinito | 400 | ✓ | ✓ | [Download](https://ankiweb.net/shared/info/1261279002) |
@@ -32,7 +32,7 @@ Top 491 Italian adjectives ranked by corpus frequency. Each card covers all four
 ### Italiano Caffè
 184 cards covering vocabulary and phrases for ordering at an Italian café — drinks, food, making requests, and understanding the menu.
 
-### Italian Numbers
+### Italiano Numeri
 400 cards covering Italian numbers — cardinal numbers, ordinals, and compound forms. Images are not included for this deck.
 
 ### Italiano Sostantivi
@@ -73,7 +73,9 @@ All conjugation decks share the same set of verb images — the image for *esser
 
 ## How to install
 
-The compiled `.apkg` files are available in the [`output/`](output/) folder of this repository, or via the AnkiWeb links in the table above.
+[View all decks on AnkiWeb](https://ankiweb.net/shared/by-author/1673740821)
+
+The compiled `.apkg` files are also available in the [`output/`](output/) folder of this repository, or via the AnkiWeb links in the table above.
 
 1. Download the `.apkg` file from `output/` or click **Download** next to the deck you want
 2. Open Anki desktop

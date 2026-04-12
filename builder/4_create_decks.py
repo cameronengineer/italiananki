@@ -44,6 +44,8 @@ DECK_NAMES: dict[str, str] = {
     "cafe":                      "Cam's Decks - Italiano Caffè",
     "fluentforever":             "Cam's Decks - Italiano Fluent Forever 625 Words",
     "nouns":                     "Cam's Decks - Italiano Sostantivi",
+    "numbers":                   "Cam's Decks - Italiano Numeri",
+    "tuttobene":                 "Cam's Decks - Italiano Tutto Bene",
     "verbs_infinito":            "Cam's Decks - Italiano Verbi Infinito",
     "verbs_presente":            "Cam's Decks - Italiano Verbi Presente",
     "verbs_passatoprossimo":     "Cam's Decks - Italiano Verbi Passato Prossimo",
