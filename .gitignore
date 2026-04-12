@@ -19,7 +19,6 @@ ENV/
 
 # Generated artifacts — do not commit
 spreadsheets/*.csv
-output/*.apkg
 media/audio/*
 media/audio_compressed/*
 media/images/*
@@ -27,11 +26,15 @@ media/images_compressed/*
 
 # Keep the directories themselves
 !spreadsheets/.gitkeep
-!output/.gitkeep
 !media/audio/.gitkeep
 !media/images/.gitkeep
 
-# Tuttobene — exclude any file or directory with this name
+# Output — commit all compiled decks except tuttobene
+!output/
+!output/*.apkg
+output/tuttobene*
+
+# Tuttobene — exclude any file or directory with this name elsewhere
 *tuttobene*
 
 # Exclude transferable as its a week deck

@@ -73,7 +73,9 @@ All conjugation decks share the same set of verb images — the image for *esser
 
 ## How to install
 
-1. Click **Download** next to the deck you want
+The compiled `.apkg` files are available in the [`output/`](output/) folder of this repository, or via the AnkiWeb links in the table above.
+
+1. Download the `.apkg` file from `output/` or click **Download** next to the deck you want
 2. Open Anki desktop
 3. Go to **File → Import** and select the downloaded `.apkg` file
 4. The deck will appear under **Cam's Decks** ready to study
