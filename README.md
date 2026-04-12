@@ -8,7 +8,7 @@ A collection of Italian language Anki decks built from frequency-ranked word lis
 
 | Deck | Notes | Audio | Images | AnkiWeb |
 |------|------:|:-----:|:------:|---------|
-| Cam's Decks - Italiano Fluent Forever 625 Words | 629 | partial | partial | — |
+| Italiano Fluent Forever 625 Words | 629 | ✓ | ✓ | — |
 | Italiano Aggettivi | 491 | ✓ | ✓ | [Download](https://ankiweb.net/shared/info/1165315849) |
 | Italiano Caffè | 184 | ✓ | ✓ | [Download](https://ankiweb.net/shared/info/2027629040) |
 | Italian Numbers | 400 | ✓ | N/A | — |
