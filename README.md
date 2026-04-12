@@ -23,7 +23,7 @@ A collection of Italian language Anki decks built from frequency-ranked word lis
 
 ## Deck descriptions
 
-### Cam's Decks - Italiano Fluent Forever 625 Words
+### Italiano Fluent Forever 625 Words
 Fluent Forever foundational vocabulary list — the most useful words across every part of speech. Organised thematically (animals, food, body, verbs, adjectives, etc.) and labelled by word type. Ideal as a first vocabulary deck before moving to the frequency-ranked decks.
 
 ### Italiano Aggettivi
