@@ -1,0 +1,630 @@
+english,italian,type,theme
+dog,il cane,noun,Animal
+cat,il gatto,noun,Animal
+fish,il pesce,noun,Animal
+bird,l'uccello,noun,Animal
+cow,la mucca,noun,Animal
+pig,il maiale,noun,Animal
+mouse,il topo,noun,Animal
+horse,il cavallo,noun,Animal
+wing,l'ala,noun,Animal
+animal,l'animale,noun,Animal
+train,il treno,noun,Transportation
+plane,l'aereo,noun,Transportation
+car,la macchina,noun,Transportation
+truck,il camion,noun,Transportation
+bicycle,la bicicletta,noun,Transportation
+bus,l'autobus,noun,Transportation
+boat,la barca,noun,Transportation
+ship,la nave,noun,Transportation
+tire,lo pneumatico,noun,Transportation
+gasoline,la benzina,noun,Transportation
+engine,il motore,noun,Transportation
+ticket,il biglietto,noun,Transportation
+transportation,il trasporto,noun,Transportation
+city,la città,noun,Location
+house,la casa,noun,Location
+apartment,l'appartamento,noun,Location
+street,la strada,noun,Location
+airport,l'aeroporto,noun,Location
+train station,la stazione,noun,Location
+bridge,il ponte,noun,Location
+hotel,l'hotel,noun,Location
+restaurant,il ristorante,noun,Location
+farm,la fattoria,noun,Location
+court,il tribunale,noun,Location
+school,la scuola,noun,Location
+office,l'ufficio,noun,Location
+room,la stanza,noun,Location
+town,il paese,noun,Location
+university,l'università,noun,Location
+club,il club,noun,Location
+bar,il bar,noun,Location
+park,il parco,noun,Location
+camp,il campo,noun,Location
+store,il negozio,noun,Location
+theater,il teatro,noun,Location
+library,la biblioteca,noun,Location
+hospital,l'ospedale,noun,Location
+church,la chiesa,noun,Location
+market,il mercato,noun,Location
+country,il paese,noun,Location
+building,l'edificio,noun,Location
+ground,il suolo,noun,Location
+space,lo spazio,noun,Location
+bank,la banca,noun,Location
+location,la posizione,noun,Location
+hat,il cappello,noun,Clothing
+dress,il vestito,noun,Clothing
+suit,il completo,noun,Clothing
+skirt,la gonna,noun,Clothing
+shirt,la camicia,noun,Clothing
+T-shirt,la maglietta,noun,Clothing
+pants,i pantaloni,noun,Clothing
+shoes,le scarpe,noun,Clothing
+pocket,la tasca,noun,Clothing
+coat,il cappotto,noun,Clothing
+stain,la macchia,noun,Clothing
+clothing,l'abbigliamento,noun,Clothing
+red,rosso,adjective,Color
+green,verde,adjective,Color
+blue,blu,adjective,Color
+yellow,giallo,adjective,Color
+brown,marrone,adjective,Color
+pink,rosa,adjective,Color
+orange,arancione,adjective,Color
+black,nero,adjective,Color
+white,bianco,adjective,Color
+gray,grigio,adjective,Color
+color,il colore,noun,Color
+son,il figlio,noun,People
+daughter,la figlia,noun,People
+mother,la madre,noun,People
+father,il padre,noun,People
+parent,il genitore,noun,People
+baby,il neonato,noun,People
+man,l'uomo,noun,People
+woman,la donna,noun,People
+brother,il fratello,noun,People
+sister,la sorella,noun,People
+family,la famiglia,noun,People
+grandfather,il nonno,noun,People
+grandmother,la nonna,noun,People
+husband,il marito,noun,People
+wife,la moglie,noun,People
+king,il re,noun,People
+queen,la regina,noun,People
+president,il presidente,noun,People
+neighbor,il vicino,noun,People
+boy,il ragazzo,noun,People
+girl,la ragazza,noun,People
+child,il bambino,noun,People
+adult,l'adulto,noun,People
+human,l'essere umano,noun,People
+friend,l'amico,noun,People
+victim,la vittima,noun,People
+player,il giocatore,noun,People
+fan,il tifoso,noun,People
+crowd,la folla,noun,People
+person,la persona,noun,People
+teacher,l'insegnante,noun,Job
+student,lo studente,noun,Job
+lawyer,l'avvocato,noun,Job
+doctor,il medico,noun,Job
+patient,il paziente,noun,Job
+waiter,il cameriere,noun,Job
+secretary,la segretaria,noun,Job
+priest,il prete,noun,Job
+police,la polizia,noun,Job
+army,l'esercito,noun,Job
+soldier,il soldato,noun,Job
+artist,l'artista,noun,Job
+author,l'autore,noun,Job
+manager,il manager,noun,Job
+reporter,il giornalista,noun,Job
+actor,l'attore,noun,Job
+job,il lavoro,noun,Job
+religion,la religione,noun,Society
+heaven,il paradiso,noun,Society
+hell,l'inferno,noun,Society
+death,la morte,noun,Society
+medicine,la medicina,noun,Society
+money,i soldi,noun,Society
+dollar,il dollaro,noun,Society
+bill,la banconota,noun,Society
+marriage,il matrimonio,noun,Society
+wedding,il matrimonio,noun,Society
+team,la squadra,noun,Society
+relationship,la relazione,noun,Society
+race (ethnicity),la razza,noun,Society
+sex (the act),il sesso,noun,Society
+sex (gender),il genere,noun,Society
+murder,l'omicidio,noun,Society
+prison,la prigione,noun,Society
+technology,la tecnologia,noun,Society
+energy,l'energia,noun,Society
+war,la guerra,noun,Society
+peace,la pace,noun,Society
+attack,l'attacco,noun,Society
+election,l'elezione,noun,Society
+magazine,la rivista,noun,Society
+newspaper,il giornale,noun,Society
+poison,il veleno,noun,Society
+gun,la pistola,noun,Society
+sport,lo sport,noun,Society
+race (sport),la gara,noun,Society
+exercise,l'esercizio,noun,Society
+ball,la palla,noun,Society
+game,il gioco,noun,Society
+price,il prezzo,noun,Society
+contract,il contratto,noun,Society
+drug,la droga,noun,Society
+sign,il segnale,noun,Society
+science,la scienza,noun,Society
+God,Dio,noun,Society
+band,il gruppo musicale,noun,Art
+song,la canzone,noun,Art
+instrument,lo strumento,noun,Art
+music,la musica,noun,Art
+movie,il film,noun,Art
+art,l'arte,noun,Art
+coffee,il caffè,noun,Beverages
+tea,il tè,noun,Beverages
+wine,il vino,noun,Beverages
+beer,la birra,noun,Beverages
+juice,il succo,noun,Beverages
+water,l'acqua,noun,Beverages
+milk,il latte,noun,Beverages
+beverage,la bevanda,noun,Beverages
+egg,l'uovo,noun,Food
+cheese,il formaggio,noun,Food
+bread,il pane,noun,Food
+soup,la zuppa,noun,Food
+cake,la torta,noun,Food
+chicken,il pollo,noun,Food
+pork,il maiale,noun,Food
+beef,il manzo,noun,Food
+apple,la mela,noun,Food
+banana,la banana,noun,Food
+orange,l'arancia,noun,Food
+lemon,il limone,noun,Food
+corn,il mais,noun,Food
+rice,il riso,noun,Food
+oil,l'olio,noun,Food
+seed,il seme,noun,Food
+knife,il coltello,noun,Food
+spoon,il cucchiaio,noun,Food
+fork,la forchetta,noun,Food
+plate,il piatto,noun,Food
+cup,la tazza,noun,Food
+breakfast,la colazione,noun,Food
+lunch,il pranzo,noun,Food
+dinner,la cena,noun,Food
+sugar,lo zucchero,noun,Food
+salt,il sale,noun,Food
+bottle,la bottiglia,noun,Food
+food,il cibo,noun,Food
+table,il tavolo,noun,Home
+chair,la sedia,noun,Home
+bed,il letto,noun,Home
+dream,il sogno,noun,Home
+window,la finestra,noun,Home
+door,la porta,noun,Home
+bedroom,la camera da letto,noun,Home
+kitchen,la cucina,noun,Home
+bathroom,il bagno,noun,Home
+pencil,la matita,noun,Home
+pen,la penna,noun,Home
+photograph,la fotografia,noun,Home
+soap,il sapone,noun,Home
+book,il libro,noun,Home
+page,la pagina,noun,Home
+key,la chiave,noun,Home
+paint,la vernice,noun,Home
+letter,la lettera,noun,Home
+note,la nota,noun,Home
+wall,il muro,noun,Home
+paper,la carta,noun,Home
+floor,il pavimento,noun,Home
+ceiling,il soffitto,noun,Home
+roof,il tetto,noun,Home
+pool,la piscina,noun,Home
+lock,la serratura,noun,Home
+telephone,il telefono,noun,Home
+garden,il giardino,noun,Home
+yard,il cortile,noun,Home
+needle,l'ago,noun,Home
+bag,la borsa,noun,Home
+box,la scatola,noun,Home
+gift,il regalo,noun,Home
+card,la carta,noun,Home
+ring,l'anello,noun,Home
+tool,lo strumento,noun,Home
+clock,l'orologio,noun,Electronics
+lamp,la lampada,noun,Electronics
+fan,il ventilatore,noun,Electronics
+cell phone,il cellulare,noun,Electronics
+network,la rete,noun,Electronics
+computer,il computer,noun,Electronics
+program,il programma,noun,Electronics
+laptop,il laptop,noun,Electronics
+screen,lo schermo,noun,Electronics
+camera,la macchina fotografica,noun,Electronics
+television,la televisione,noun,Electronics
+radio,la radio,noun,Electronics
+electronics,l'elettronica,noun,Electronics
+head,la testa,noun,Body
+neck,il collo,noun,Body
+face,la faccia,noun,Body
+beard,la barba,noun,Body
+hair,i capelli,noun,Body
+eye,l'occhio,noun,Body
+mouth,la bocca,noun,Body
+lip,il labbro,noun,Body
+nose,il naso,noun,Body
+tooth,il dente,noun,Body
+ear,l'orecchio,noun,Body
+tear,la lacrima,noun,Body
+tongue,la lingua,noun,Body
+back,la schiena,noun,Body
+toe,il dito del piede,noun,Body
+finger,il dito,noun,Body
+foot,il piede,noun,Body
+hand,la mano,noun,Body
+leg,la gamba,noun,Body
+arm,il braccio,noun,Body
+shoulder,la spalla,noun,Body
+heart,il cuore,noun,Body
+blood,il sangue,noun,Body
+brain,il cervello,noun,Body
+knee,il ginocchio,noun,Body
+sweat,il sudore,noun,Body
+disease,la malattia,noun,Body
+bone,l'osso,noun,Body
+voice,la voce,noun,Body
+skin,la pelle,noun,Body
+body,il corpo,noun,Body
+sea,il mare,noun,Nature
+ocean,l'oceano,noun,Nature
+river,il fiume,noun,Nature
+mountain,la montagna,noun,Nature
+rain,la pioggia,noun,Nature
+snow,la neve,noun,Nature
+tree,l'albero,noun,Nature
+sun,il sole,noun,Nature
+moon,la luna,noun,Nature
+world,il mondo,noun,Nature
+Earth,la Terra,noun,Nature
+forest,la foresta,noun,Nature
+sky,il cielo,noun,Nature
+plant,la pianta,noun,Nature
+wind,il vento,noun,Nature
+soil,la terra,noun,Nature
+flower,il fiore,noun,Nature
+valley,la valle,noun,Nature
+root,la radice,noun,Nature
+lake,il lago,noun,Nature
+star,la stella,noun,Nature
+grass,l'erba,noun,Nature
+leaf,la foglia,noun,Nature
+air,l'aria,noun,Nature
+sand,la sabbia,noun,Nature
+beach,la spiaggia,noun,Nature
+wave,l'onda,noun,Nature
+fire,il fuoco,noun,Nature
+ice,il ghiaccio,noun,Nature
+island,l'isola,noun,Nature
+hill,la collina,noun,Nature
+heat,il calore,noun,Nature
+nature,la natura,noun,Nature
+glass,il vetro,noun,Materials
+metal,il metallo,noun,Materials
+plastic,la plastica,noun,Materials
+wood,il legno,noun,Materials
+stone,la pietra,noun,Materials
+diamond,il diamante,noun,Materials
+clay,l'argilla,noun,Materials
+dust,la polvere,noun,Materials
+gold,l'oro,noun,Materials
+copper,il rame,noun,Materials
+silver,l'argento,noun,Materials
+material,il materiale,noun,Materials
+meter,il metro,noun,Measurements
+centimeter,il centimetro,noun,Measurements
+kilogram,il chilogrammo,noun,Measurements
+inch,il pollice,noun,Measurements
+foot (measurement),il piede,noun,Measurements
+pound,la libbra,noun,Measurements
+half,la metà,noun,Measurements
+circle,il cerchio,noun,Measurements
+square,il quadrato,noun,Measurements
+temperature,la temperatura,noun,Measurements
+date,la data,noun,Measurements
+weight,il peso,noun,Measurements
+edge,il bordo,noun,Measurements
+corner,l'angolo,noun,Measurements
+map,la mappa,noun,Misc Nouns
+dot,il punto,noun,Misc Nouns
+consonant,la consonante,noun,Misc Nouns
+vowel,la vocale,noun,Misc Nouns
+light,la luce,noun,Misc Nouns
+sound,il suono,noun,Misc Nouns
+yes,sì,adverb,Misc Nouns
+no,no,adverb,Misc Nouns
+piece,il pezzo,noun,Misc Nouns
+pain,il dolore,noun,Misc Nouns
+injury,la ferita,noun,Misc Nouns
+hole,il buco,noun,Misc Nouns
+image,l'immagine,noun,Misc Nouns
+pattern,il modello,noun,Misc Nouns
+noun,il sostantivo,noun,Misc Nouns
+verb,il verbo,noun,Misc Nouns
+adjective,l'aggettivo,noun,Misc Nouns
+top,la cima,noun,Directions
+bottom,il fondo,noun,Directions
+side,il lato,noun,Directions
+front,il davanti,noun,Directions
+back (direction),il retro,noun,Directions
+outside,l'esterno,noun,Directions
+inside,l'interno,noun,Directions
+up,su,adverb,Directions
+down,giù,adverb,Directions
+left,sinistra,adverb,Directions
+right,destra,adverb,Directions
+straight,dritto,adverb,Directions
+north,nord,noun,Directions
+south,sud,noun,Directions
+east,est,noun,Directions
+west,ovest,noun,Directions
+direction,la direzione,noun,Directions
+summer,l'estate,noun,Seasons
+spring,la primavera,noun,Seasons
+winter,l'inverno,noun,Seasons
+fall,l'autunno,noun,Seasons
+season,la stagione,noun,Seasons
+zero,zero,number,Numbers
+one,uno,number,Numbers
+two,due,number,Numbers
+three,tre,number,Numbers
+four,quattro,number,Numbers
+five,cinque,number,Numbers
+six,sei,number,Numbers
+seven,sette,number,Numbers
+eight,otto,number,Numbers
+nine,nove,number,Numbers
+ten,dieci,number,Numbers
+eleven,undici,number,Numbers
+twelve,dodici,number,Numbers
+thirteen,tredici,number,Numbers
+fourteen,quattordici,number,Numbers
+fifteen,quindici,number,Numbers
+sixteen,sedici,number,Numbers
+seventeen,diciassette,number,Numbers
+eighteen,diciotto,number,Numbers
+nineteen,diciannove,number,Numbers
+twenty,venti,number,Numbers
+twenty-one,ventuno,number,Numbers
+twenty-two,ventidue,number,Numbers
+thirty,trenta,number,Numbers
+thirty-one,trentuno,number,Numbers
+thirty-two,trentadue,number,Numbers
+forty,quaranta,number,Numbers
+forty-one,quarantuno,number,Numbers
+forty-two,quarantadue,number,Numbers
+fifty,cinquanta,number,Numbers
+fifty-one,cinquantuno,number,Numbers
+fifty-two,cinquantadue,number,Numbers
+sixty,sessanta,number,Numbers
+sixty-one,sessantuno,number,Numbers
+sixty-two,sessantadue,number,Numbers
+seventy,settanta,number,Numbers
+seventy-one,settantuno,number,Numbers
+seventy-two,settantadue,number,Numbers
+eighty,ottanta,number,Numbers
+eighty-one,ottantuno,number,Numbers
+eighty-two,ottantadue,number,Numbers
+ninety,novanta,number,Numbers
+ninety-one,novantuno,number,Numbers
+ninety-two,novantadue,number,Numbers
+one hundred,cento,number,Numbers
+one hundred one,centouno,number,Numbers
+one hundred two,centodue,number,Numbers
+one hundred ten,centodieci,number,Numbers
+one hundred eleven,centoundici,number,Numbers
+one thousand,mille,number,Numbers
+one thousand one,milleuno,number,Numbers
+ten thousand,diecimila,number,Numbers
+one hundred thousand,centomila,number,Numbers
+million,un milione,number,Numbers
+billion,un miliardo,number,Numbers
+first,primo,adjective,Numbers
+second (ordinal),secondo,adjective,Numbers
+third,terzo,adjective,Numbers
+fourth,quarto,adjective,Numbers
+fifth,quinto,adjective,Numbers
+number,il numero,noun,Numbers
+January,gennaio,noun,Months
+February,febbraio,noun,Months
+March,marzo,noun,Months
+April,aprile,noun,Months
+May,maggio,noun,Months
+June,giugno,noun,Months
+July,luglio,noun,Months
+August,agosto,noun,Months
+September,settembre,noun,Months
+October,ottobre,noun,Months
+November,novembre,noun,Months
+December,dicembre,noun,Months
+Monday,lunedì,noun,Days
+Tuesday,martedì,noun,Days
+Wednesday,mercoledì,noun,Days
+Thursday,giovedì,noun,Days
+Friday,venerdì,noun,Days
+Saturday,sabato,noun,Days
+Sunday,domenica,noun,Days
+year,l'anno,noun,Time
+month,il mese,noun,Time
+week,la settimana,noun,Time
+day,il giorno,noun,Time
+hour,l'ora,noun,Time
+minute,il minuto,noun,Time
+second (time),il secondo,noun,Time
+morning,la mattina,noun,Time
+afternoon,il pomeriggio,noun,Time
+evening,la sera,noun,Time
+night,la notte,noun,Time
+time,il tempo,noun,Time
+to work,lavorare,verb,Verbs
+to play,giocare,verb,Verbs
+to walk,camminare,verb,Verbs
+to run,correre,verb,Verbs
+to drive,guidare,verb,Verbs
+to fly,volare,verb,Verbs
+to swim,nuotare,verb,Verbs
+to go,andare,verb,Verbs
+to stop,fermarsi,verb,Verbs
+to follow,seguire,verb,Verbs
+to think,pensare,verb,Verbs
+to speak,parlare,verb,Verbs
+to eat,mangiare,verb,Verbs
+to drink,bere,verb,Verbs
+to kill,uccidere,verb,Verbs
+to die,morire,verb,Verbs
+to smile,sorridere,verb,Verbs
+to laugh,ridere,verb,Verbs
+to cry,piangere,verb,Verbs
+to buy,comprare,verb,Verbs
+to pay,pagare,verb,Verbs
+to sell,vendere,verb,Verbs
+to shoot,sparare,verb,Verbs
+to learn,imparare,verb,Verbs
+to jump,saltare,verb,Verbs
+to smell,odorare,verb,Verbs
+to hear,sentire,verb,Verbs
+to listen,ascoltare,verb,Verbs
+to taste,assaggiare,verb,Verbs
+to touch,toccare,verb,Verbs
+to see,vedere,verb,Verbs
+to watch,guardare,verb,Verbs
+to kiss,baciare,verb,Verbs
+to burn,bruciare,verb,Verbs
+to melt,sciogliere,verb,Verbs
+to dig,scavare,verb,Verbs
+to explode,esplodere,verb,Verbs
+to sit,sedersi,verb,Verbs
+to stand,stare in piedi,verb,Verbs
+to love,amare,verb,Verbs
+to pass,passare,verb,Verbs
+to cut,tagliare,verb,Verbs
+to fight,combattere,verb,Verbs
+to lie down,sdraiarsi,verb,Verbs
+to dance,ballare,verb,Verbs
+to sleep,dormire,verb,Verbs
+to wake up,svegliarsi,verb,Verbs
+to sing,cantare,verb,Verbs
+to count,contare,verb,Verbs
+to marry,sposarsi,verb,Verbs
+to pray,pregare,verb,Verbs
+to win,vincere,verb,Verbs
+to lose,perdere,verb,Verbs
+to mix,mescolare,verb,Verbs
+to bend,piegare,verb,Verbs
+to wash,lavare,verb,Verbs
+to cook,cucinare,verb,Verbs
+to open,aprire,verb,Verbs
+to close,chiudere,verb,Verbs
+to write,scrivere,verb,Verbs
+to call,chiamare,verb,Verbs
+to turn,girare,verb,Verbs
+to build,costruire,verb,Verbs
+to teach,insegnare,verb,Verbs
+to grow,crescere,verb,Verbs
+to draw,disegnare,verb,Verbs
+to feed,nutrire,verb,Verbs
+to catch,prendere,verb,Verbs
+to throw,lanciare,verb,Verbs
+to clean,pulire,verb,Verbs
+to find,trovare,verb,Verbs
+to fall,cadere,verb,Verbs
+to push,spingere,verb,Verbs
+to pull,tirare,verb,Verbs
+to carry,portare,verb,Verbs
+to break,rompere,verb,Verbs
+to wear,indossare,verb,Verbs
+to hang,appendere,verb,Verbs
+to shake,scuotere,verb,Verbs
+to sign,firmare,verb,Verbs
+to beat,battere,verb,Verbs
+to lift,sollevare,verb,Verbs
+long,lungo,adjective,Adjectives
+short (vs long),corto,adjective,Adjectives
+tall,alto,adjective,Adjectives
+short (vs tall),basso,adjective,Adjectives
+wide,largo,adjective,Adjectives
+narrow,stretto,adjective,Adjectives
+big,grande,adjective,Adjectives
+small,piccolo,adjective,Adjectives
+slow,lento,adjective,Adjectives
+fast,veloce,adjective,Adjectives
+hot,caldo,adjective,Adjectives
+cold,freddo,adjective,Adjectives
+warm,tiepido,adjective,Adjectives
+cool,fresco,adjective,Adjectives
+new,nuovo,adjective,Adjectives
+old (vs new),vecchio,adjective,Adjectives
+young,giovane,adjective,Adjectives
+old (vs young),anziano,adjective,Adjectives
+good,buono,adjective,Adjectives
+bad,cattivo,adjective,Adjectives
+wet,bagnato,adjective,Adjectives
+dry,asciutto,adjective,Adjectives
+sick,malato,adjective,Adjectives
+healthy,sano,adjective,Adjectives
+loud,rumoroso,adjective,Adjectives
+quiet,silenzioso,adjective,Adjectives
+happy,felice,adjective,Adjectives
+sad,triste,adjective,Adjectives
+beautiful,bello,adjective,Adjectives
+ugly,brutto,adjective,Adjectives
+deaf,sordo,adjective,Adjectives
+blind,cieco,adjective,Adjectives
+nice,gentile,adjective,Adjectives
+mean,cattivo,adjective,Adjectives
+rich,ricco,adjective,Adjectives
+poor,povero,adjective,Adjectives
+thick,spesso,adjective,Adjectives
+thin,sottile,adjective,Adjectives
+expensive,costoso,adjective,Adjectives
+cheap,economico,adjective,Adjectives
+flat,piatto,adjective,Adjectives
+curved,curvo,adjective,Adjectives
+male,maschile,adjective,Adjectives
+female,femminile,adjective,Adjectives
+tight,stretto,adjective,Adjectives
+loose,largo,adjective,Adjectives
+high,alto,adjective,Adjectives
+low,basso,adjective,Adjectives
+soft,morbido,adjective,Adjectives
+hard,duro,adjective,Adjectives
+deep,profondo,adjective,Adjectives
+shallow,poco profondo,adjective,Adjectives
+clean,pulito,adjective,Adjectives
+dirty,sporco,adjective,Adjectives
+strong,forte,adjective,Adjectives
+weak,debole,adjective,Adjectives
+dead,morto,adjective,Adjectives
+alive,vivo,adjective,Adjectives
+heavy,pesante,adjective,Adjectives
+light (vs heavy),leggero,adjective,Adjectives
+dark,scuro,adjective,Adjectives
+light (vs dark),chiaro,adjective,Adjectives
+nuclear,nucleare,adjective,Adjectives
+famous,famoso,adjective,Adjectives
+I,io,pronoun,Pronouns
+you (singular),tu,pronoun,Pronouns
+he,lui,pronoun,Pronouns
+she,lei,pronoun,Pronouns
+it,esso,pronoun,Pronouns
+we,noi,pronoun,Pronouns
+you (plural),voi,pronoun,Pronouns
+they,loro,pronoun,Pronouns

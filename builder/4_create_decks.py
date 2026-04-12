@@ -42,6 +42,7 @@ def deck_id_for(stem: str) -> int:
 DECK_NAMES: dict[str, str] = {
     "adjectives":                "Cam's Decks - Italiano Aggettivi",
     "cafe":                      "Cam's Decks - Italiano Caffè",
+    "fluentforever":             "Cam's Decks - Italiano Fluent Forever 625 Words",
     "nouns":                     "Cam's Decks - Italiano Sostantivi",
     "verbs_infinito":            "Cam's Decks - Italiano Verbi Infinito",
     "verbs_presente":            "Cam's Decks - Italiano Verbi Presente",

@@ -34,6 +34,9 @@ media/images_compressed/*
 # Tuttobene — exclude any file or directory with this name
 *tuttobene*
 
+# Exclude transferable as its a week deck
+*Z8_transferable*
+
 # API keys — never commit secrets
 .openai
 .openrouter
@@ -53,6 +56,3 @@ Thumbs.db
 
 # Kilo AI config
 .kilo/
-
-# One-off scripts — not for committing
-generate_sensitive_images.py

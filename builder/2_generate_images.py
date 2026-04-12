@@ -12,6 +12,9 @@ Two-phase process per image:
 Reads:   spreadsheets/*.csv     (must have a `back_highlight` column)
 Writes:  media/images/<md5>.png
 
+Rows with a `generate_image` column set to "false" (case-insensitive) are
+skipped — no image is generated for them.
+
 The `back_highlight` value is MD5-hashed to produce the output filename.
 Each unique `back_highlight` value produces exactly one PNG file.
 
@@ -98,6 +101,10 @@ def collect_entries(spreadsheets_dir: Path, only: list[str] | None = None) -> li
                 print(f"  [skip] {csv_path.name} — no 'back_highlight' column")
                 continue
             for row in reader:
+                # Honour the opt-out flag: skip rows that set generate_image=false
+                if row.get("generate_image", "").strip().lower() == "false":
+                    continue
+
                 back_highlight = row.get("back_highlight", "").strip()
                 back_text      = row.get("back_text", "").strip()
                 key = back_text if back_text else back_highlight
