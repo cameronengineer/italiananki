@@ -110,21 +110,34 @@ def main() -> None:
     total = len(entries)
     print(f"Found {total} unique audio string(s).\n")
 
+    # Count how many actually need to be generated
+    to_generate = 0
+    for source, text in entries:
+        filename = audio_filename(text)
+        output_path = OUTPUT_DIR / filename
+        if not (output_path.exists() and output_path.stat().st_size > 0):
+            to_generate += 1
+
+    print(f"Need to generate {to_generate} file(s).\n")
+
     generated = 0
     skipped = 0
     failed = 0
+    generation_count = 0  # Track progress of actual generations
 
-    for i, (source, text) in enumerate(entries, start=1):
+    for source, text in entries:
         filename = audio_filename(text)
         output_path = OUTPUT_DIR / filename
-        label = f"[{i}/{total}] ({source}) \"{text}\""
+        label = f"({source}) \"{text}\""
 
         if output_path.exists() and output_path.stat().st_size > 0:
             print(f"{label} — already exists, skipping")
             skipped += 1
             continue
 
-        print(f"{label} — generating...")
+        generation_count += 1
+        progress_label = f"[{generation_count}/{to_generate}] {label}"
+        print(f"{progress_label} — generating...")
         success = generate_audio(client, text, output_path)
         if success:
             print(f"    Saved: {filename}")

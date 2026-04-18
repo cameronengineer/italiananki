@@ -40,17 +40,19 @@ def deck_id_for(stem: str) -> int:
 
 
 DECK_NAMES: dict[str, str] = {
-    "adjectives":                "Cam's Decks - Italiano Aggettivi",
-    "cafe":                      "Cam's Decks - Italiano Caffè",
-    "fluentforever":             "Cam's Decks - Italiano Fluent Forever 625 Words",
-    "nouns":                     "Cam's Decks - Italiano Sostantivi",
-    "numbers":                   "Cam's Decks - Italiano Numeri",
-    "tuttobene":                 "Cam's Decks - Italiano Tutto Bene",
-    "verbs_infinito":            "Cam's Decks - Italiano Verbi Infinito",
-    "verbs_presente":            "Cam's Decks - Italiano Verbi Presente",
-    "verbs_passatoprossimo":     "Cam's Decks - Italiano Verbi Passato Prossimo",
-    "verbs_imperfetto":          "Cam's Decks - Italiano Verbi Imperfetto",
-    "verbs_presenteprogressivo": "Cam's Decks - Italiano Verbi Presente Progressivo",
+    "adjectives":                            "Cam's Decks - Italiano Aggettivi",
+    "cafe":                                  "Cam's Decks - Italiano Caffè",
+    "fluentforever":                         "Cam's Decks - Italiano Fluent Forever 625 Words",
+    "nouns":                                 "Cam's Decks - Italiano Sostantivi",
+    "numbers":                               "Cam's Decks - Italiano Numeri",
+    "tuttobene":                             "Cam's Decks - Italiano Tutto Bene",
+    "verbs_infinito":                        "Cam's Decks - Italiano Verbi Infinito",
+    "verbs_presente":                        "Cam's Decks - Italiano Verbi Presente",
+    "verbs_passatoprossimo":                 "Cam's Decks - Italiano Verbi Passato Prossimo",
+    "verbs_imperfetto":                      "Cam's Decks - Italiano Verbi Imperfetto",
+    "verbs_presenteprogressivo":             "Cam's Decks - Italiano Verbi Presente Progressivo",
+    "vulgarity_dirty_italian_third_edition": "Cam's Decks - Italiano Vulgarity Dirty Italian Third Edition",
+    "vulgarity_talk_dirty_italian":          "Cam's Decks - Italiano Vulgarity Talk Dirty Italian",
 }
 
 

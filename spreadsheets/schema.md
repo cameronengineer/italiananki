@@ -15,9 +15,10 @@ The CSV files in this directory are generated artifacts. Do not edit them manual
 | `back_highlight` | yes | Primary Italian text shown highlighted on the card back. Can be empty. |
 | `back_text` | yes | Secondary text on the card back. Can be empty. |
 | `audio` | yes | Italian text used to generate the audio file. Must match the text passed to the audio generator exactly. Can be empty. |
-| `image` | yes | Text prompt used to generate the card image via AI. For conjugated verb cards, all pronoun rows for the same verb share the same prompt. Can be empty if no image is needed. |
+| `image` | no | (Optional) Text prompt used to generate the card image via AI. For conjugated verb cards, all pronoun rows for the same verb share the same prompt. Can be empty if no image is needed. |
+| `generate_image` | no | (Optional) Boolean flag (`true`/`false`) to indicate whether an image should be generated for this card. |
 
-Column order must be: `front_text`, `front_labels`, `back_highlight`, `back_text`, `audio`, `image`.
+Column order must be: `front_text`, `front_labels`, `back_highlight`, `back_text`, `audio`, and optionally `image` or `generate_image`.
 
 ---
 
@@ -30,7 +31,8 @@ Cards are production-style: the English word or phrase appears on the front and 
 - `back_highlight` — the Italian answer
 - `back_text` — additional context if needed, otherwise empty
 - `audio` — the Italian string to pronounce
-- `image` — the prompt used to generate the card image
+- `image` — (optional) the prompt used to generate the card image
+- `generate_image` — (optional) boolean flag to enable/disable image generation
 
 ---
 

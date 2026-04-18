@@ -40,6 +40,9 @@ output/tuttobene*
 # Exclude transferable as its a week deck
 *Z8_transferable*
 
+# 10_Vulgarity — exclude raw source files
+*vulgarity*
+
 # API keys — never commit secrets
 .openai
 .openrouter
@@ -59,3 +62,4 @@ Thumbs.db
 
 # Kilo AI config
 .kilo/
+.agents/skills/

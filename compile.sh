@@ -8,6 +8,7 @@ python sources/6_verbs_imperfetto_by_frequency/2_generate_flashcards.py && \
 python sources/7_verbs_presenteprogressivo_by_frequency/2_generate_flashcards.py && \
 python sources/8_numbers/2_generate_flashcards.py && \
 python sources/9_tuttobene/2_generate_flashcards.py && \
+python sources/10_vulgarity/2_generate_flashcards.py && \
 python builder/1_generate_audio.py && \
 python builder/2_generate_images.py && \
 python builder/3_compress_media.py && \
