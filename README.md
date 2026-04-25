@@ -8,22 +8,38 @@ A collection of Italian language Anki decks built from frequency-ranked word lis
 
 [View all decks on AnkiWeb](https://ankiweb.net/shared/by-author/1673740821)
 
-| Deck | Notes | Audio | Images | AnkiWeb |
-|------|------:|:-----:|:------:|---------|
-| Italiano Fluent Forever 625 Words | 629 | ✓ | ✓ | [Download](https://ankiweb.net/shared/info/91296812) |
-| Italiano Aggettivi | 491 | ✓ | ✓ | [Download](https://ankiweb.net/shared/info/1165315849) |
-| Italiano Caffè | 184 | ✓ | ✓ | [Download](https://ankiweb.net/shared/info/2027629040) |
-| Italian Numbers | 400 | ✓ | N/A | [Download](https://ankiweb.net/shared/info/1673740821) |
-| Italiano Sostantivi | 1,000 | ✓ | ✓ | [Download](https://ankiweb.net/shared/info/472694903) |
-| Italiano Verbi Imperfetto | 60 | ✓ | ✓ | [Download](https://ankiweb.net/shared/info/1126989263) |
-| Italiano Verbi Infinito | 400 | ✓ | ✓ | [Download](https://ankiweb.net/shared/info/1261279002) |
-| Italiano Verbi Passato Prossimo | 2,400 | ✓ | ✓ | [Download](https://ankiweb.net/shared/info/1602921365) |
-| Italiano Verbi Presente | 2,400 | ✓ | ✓ | [Download](https://ankiweb.net/shared/info/1681943579) |
-| Italiano Verbi Presente Progressivo | 2,400 | ✓ | ✓ | [Download](https://ankiweb.net/shared/info/1923480684) |
+| Deck | Notes | Audio | Images | AnkiWeb | Source |
+|------|------:|:-----:|:------:|---------|--------|
+| Italiano CILS A1 | 485 | ✓ | ✓ | — | [Università per Stranieri di Perugia](https://www.unistrapg.it/profilo_lingua_italiana/site/liste_lessicali_a1.html) |
+| Italiano CILS A2 | 1,037 | ✓ | ✓ | — | [Università per Stranieri di Perugia](https://www.unistrapg.it/profilo_lingua_italiana/site/liste_lessicali_a2.html) |
+| Italiano CILS B1 | 1,538 | ✓ | ✓ | — | [Università per Stranieri di Perugia](https://www.unistrapg.it/profilo_lingua_italiana/site/liste_lessicali_b1.html) |
+| Italiano CILS B2 | 2,078 | ✓ | ✓ | — | [Università per Stranieri di Perugia](https://www.unistrapg.it/profilo_lingua_italiana/site/liste_lessicali_b2.html) |
+| Italiano Fluent Forever 625 Words | 629 | ✓ | ✓ | [Download](https://ankiweb.net/shared/info/91296812) | [Fluent Forever](https://fluent-forever.com/wp-content/uploads/2014/05/625-List-Thematic.pdf) |
+| Italiano Aggettivi | 491 | ✓ | ✓ | [Download](https://ankiweb.net/shared/info/1165315849) | — |
+| Italiano Caffè | 184 | ✓ | ✓ | [Download](https://ankiweb.net/shared/info/2027629040) | — |
+| Italian Numbers | 400 | ✓ | N/A | [Download](https://ankiweb.net/shared/info/1673740821) | — |
+| Italiano Sostantivi | 1,000 | ✓ | ✓ | [Download](https://ankiweb.net/shared/info/472694903) | — |
+| Italiano Verbi Imperfetto | 60 | ✓ | ✓ | [Download](https://ankiweb.net/shared/info/1126989263) | — |
+| Italiano Verbi Infinito | 400 | ✓ | ✓ | [Download](https://ankiweb.net/shared/info/1261279002) | — |
+| Italiano Verbi Passato Prossimo | 2,400 | ✓ | ✓ | [Download](https://ankiweb.net/shared/info/1602921365) | — |
+| Italiano Verbi Presente | 2,400 | ✓ | ✓ | [Download](https://ankiweb.net/shared/info/1681943579) | — |
+| Italiano Verbi Presente Progressivo | 2,400 | ✓ | ✓ | [Download](https://ankiweb.net/shared/info/1923480684) | — |
 
 ---
 
 ## Deck descriptions
+
+### CILS A1
+485 Italian words at CEFR level A1 from the official CILS (Certificazione di Italiano come Lingua Straniera) exam vocabulary list, published by Università per Stranieri di Perugia. Covers the foundational vocabulary needed for basic Italian communication and the A1 exam.
+
+### CILS A2
+1,037 Italian words at CEFR level A2 from the official CILS exam vocabulary list. Builds on A1 with elementary-level vocabulary for everyday situations, personal information, and simple conversations.
+
+### CILS B1
+1,538 Italian words at CEFR level B1 from the official CILS exam vocabulary list. Intermediate vocabulary for expressing opinions, describing experiences, and handling most situations encountered while traveling in Italian-speaking areas.
+
+### CILS B2
+2,078 Italian words at CEFR level B2 from the official CILS exam vocabulary list. Upper-intermediate vocabulary for understanding complex texts, interacting fluently with native speakers, and producing detailed text on a wide range of subjects.
 
 ### Italiano Fluent Forever 625 Words
 Fluent Forever foundational vocabulary list — the most useful words across every part of speech. Organised thematically (animals, food, body, verbs, adjectives, etc.) and labelled by word type. Ideal as a first vocabulary deck before moving to the frequency-ranked decks.
@@ -85,6 +101,36 @@ The compiled `.apkg` files are also available in the [`output/`](output/) folder
 4. The deck will appear under **Cam's Decks** ready to study
 
 After importing on desktop you can sync to AnkiWeb or AnkiMobile.
+
+---
+
+## Adding a new deck
+
+To add a new deck to the project:
+
+1. **Create source directory**: Add a new directory under `sources/` (e.g., `sources/11_cils/`)
+2. **Generate flashcards CSV**: Create a script that outputs to `spreadsheets/<deckname>.csv` with columns:
+   - `front_text` — English meaning
+   - `front_labels` — Labels separated by `|` (e.g., "noun | theme")
+   - `back_highlight` — Italian word/phrase with articles/forms
+   - `back_text` — Additional back text (or empty string)
+   - `audio` — Text to generate audio for (usually base form without `/`)
+
+3. **Update `compile.sh`**: Add your flashcard generation script to the pipeline (before the `builder/` scripts)
+
+4. **Update `builder/4_create_decks.py`**: Add an entry to the `DECK_NAMES` dictionary mapping your CSV stem to a human-readable deck name:
+   ```python
+   "your_deck_stem": "Cam's Decks - Italiano Your Deck Name",
+   ```
+
+5. **Run the pipeline**: Execute `./compile.sh` to:
+   - Generate flashcards CSV
+   - Generate audio files for all unique `audio` values
+   - Generate images for all unique `back_text` or `back_highlight` values
+   - Compress media files
+   - Create the `.apkg` package in `output/`
+
+That's it! The build system will automatically discover your new CSV and create the deck with all media files included.
 
 ---
 
